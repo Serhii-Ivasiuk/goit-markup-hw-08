@@ -26,106 +26,116 @@
 			<!-- Навігація -->
 			<nav>
 				<!-- Логотип -->
-				<a href="./index.html" lang="en">WebStudio</a>
+				<a class="logo link" href="./index.html" lang="en"
+					>Web<span class="header-logo">Studio</span></a
+				>
 				<!-- Список навігації -->
-				<ul>
+				<ul class="list">
 					<li>
-						<a href="./index.html">Студія</a>
+						<a class="nav-item link" href="./index.html">Студія</a>
 					</li>
 					<li>
-						<a href="./portfolio.html">Портфоліо</a>
+						<a class="nav-item link" href="./portfolio.html">Портфоліо</a>
 					</li>
 					<li>
-						<a href="#">Контакти</a>
+						<a class="nav-item link" href="#">Контакти</a>
 					</li>
 				</ul>
 			</nav>
 			<!-- Список контактів -->
-			<ul>
+			<ul class="list">
 				<li>
-					<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+					<a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 				</li>
 				<li>
-					<a href="tel:+380961111111">+38 096 111 11 11</a>
+					<a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a>
 				</li>
 			</ul>
 		</header>
 		<!-- Мейн -->
 		<main>
-			<!-- Портфолыо -->
+			<!-- Портфоліо -->
 			<section>
 				<!-- Заголовок нижче присутній в розмітці для семантики. В макеті його немає, тому він буде прихований пізніше через стилі. -->
-				<h1>Портфоліо</h1>
+				<h1 style="display: none">Портфоліо</h1>
 				<!-- Список фільтрів -->
-				<ul>
-					<li><button type="button">Усі</button></li>
-					<li><button type="button">Веб-сайти</button></li>
-					<li><button type="button">Додатки</button></li>
-					<li><button type="button">Дизайн</button></li>
-					<li><button type="button">Маркетинг</button></li>
+				<ul class="list">
+					<li><button class="filter-btn button" type="button">Усі</button></li>
+					<li><button class="filter-btn button" type="button">Веб-сайти</button></li>
+					<li><button class="filter-btn button" type="button">Додатки</button></li>
+					<li><button class="filter-btn button" type="button">Дизайн</button></li>
+					<li><button class="filter-btn button" type="button">Маркетинг</button></li>
 				</ul>
 				<!-- Список робіт -->
-				<ul>
-					<li>
-						<a href="#">
+				<ul class="list">
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-1.jpg" alt="" width="370" />
-							<h2>Технокряк</h2>
-							<p>Веб-сайт</p>
+							<h2 class="example-title">Технокряк</h2>
+							<p class="example-text">Веб-сайт</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-2.jpg" alt="" width="370" />
-							<h2>Постер <span lang="en">New Orlean vs Golden Star</span></h2>
+							<h2 class="example-title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
 							<p>Дизайн</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-3.jpg" alt="" width="370" />
-							<h2>Ресторан <span lang="en">Seafood</span></h2>
+							<h2 class="example-title">Ресторан <span lang="en">Seafood</span></h2>
 							<p>Додаток</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-4.jpg" alt="" width="370" />
-							<h2>Проєкт <span lang="en">Prime</span></h2>
+							<h2 class="example-title">Проєкт <span lang="en">Prime</span></h2>
 							<p>Маркетинг</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-5.jpg" alt="" width="370" />
-							<h2>Проєкт <span lang="en">Boxes</span></h2>
+							<h2 class="example-title">Проєкт <span lang="en">Boxes</span></h2>
 							<p>Додаток</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-6.jpg" alt="" width="370" />
-							<h2 lang="en">Inspiration has no Borders</h2>
+							<h2 class="example-title" lang="en">Inspiration has no Borders</h2>
 							<p>Веб-сайт</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-7.jpg" alt="" width="370" />
-							<h2>Видання <span lang="en">Limited Edition</span></h2>
+							<h2 class="example-title">Видання <span lang="en">Limited Edition</span></h2>
 							<p>Дизайн</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-8.jpg" alt="" width="370" />
-							<h2>Проєкт <span lang="en">LAB</span></h2>
+							<h2 class="example-title">Проєкт <span lang="en">LAB</span></h2>
 							<p>Маркетинг</p>
 						</a>
 					</li>
-					<li>
-						<a href="#">
+
+					<li class="example-item">
+						<a class="link" href="#">
 							<img src="./images/3-examples/example-9.jpg" alt="" width="370" />
-							<h2 lang="en">Growing Business</h2>
+							<h2 class="example-title" lang="en">Growing Business</h2>
 							<p>Додаток</p>
 						</a>
 					</li>
@@ -133,14 +143,17 @@
 			</section>
 		</main>
 		<!-- Футер -->
-		<footer>
+		<footer class="footer">
 			<!-- Логотип -->
-			<a href="./index.html" lang="en">WebStudio</a>
+			<a class="logo link" href="./index.html" lang="en"
+				>Web<span class="footer-logo">Studio</span></a
+			>
 			<!-- Адреса + контакти -->
-			<address>
-				<ul>
+			<address class="address">
+				<ul class="list">
 					<li>
 						<a
+							class="contact-item address-link link"
 							href="https://goo.gl/maps/17jP42yAANFtEqg37"
 							target="_blank"
 							rel="noopener noreferrer nofollow"
@@ -148,10 +161,10 @@
 						>
 					</li>
 					<li>
-						<a href="mailto:info@devstudio.com">info@devstudio.com</a>
+						<a class="contact-item link" href="mailto:info@devstudio.com">info@devstudio.com</a>
 					</li>
 					<li>
-						<a href="tel:+380961111111">+38 096 111 11 11</a>
+						<a class="contact-item link" href="tel:+380961111111">+38 096 111 11 11</a>
 					</li>
 				</ul>
 			</address>
