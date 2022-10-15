@@ -18,6 +18,8 @@
 
 body {
 	font-family: "Roboto", Arial, sans-serif;
+	font-size: 14px;
+	letter-spacing: 0.03em;
 
 	color: var(--text-primary-color);
 	background-color: var(--bg-primary-color);
@@ -31,16 +33,26 @@ body {
 }
 
 .link {
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 	text-decoration: none;
+
 	color: inherit;
 }
 
 .button {
+	font-size: 16px;
+
 	border: none;
 	border-radius: 4px;
-
 	cursor: pointer;
-	color: inherit;
+}
+
+.interactive:hover,
+.interactive:focus {
+	outline: none;
+	color: var(--accent-color);
 }
 
 /* Тимчасові стилі - при стилізації позиціонування прибрати*/
@@ -59,7 +71,6 @@ p {
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
-	letter-spacing: 0.03em;
 
 	color: var(--accent-color);
 }
@@ -68,30 +79,8 @@ p {
 	color: var(--text-additional-color);
 }
 
-.nav-item {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-
+.nav-link {
 	color: var(--text-secondary-color);
-}
-
-.nav-item:hover,
-.nav-item:focus {
-	color: var(--accent-color);
-}
-
-.contact-item {
-	font-weight: 500;
-	font-size: 14px;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-}
-
-.contact-item:hover,
-.contact-item:focus {
-	color: var(--accent-color);
 }
 
 /* Герой */
@@ -122,24 +111,21 @@ p {
 
 .hero-btn:hover,
 .hero-btn:focus {
+	outline: none;
 	background: #188ce8;
 }
 
 /* Особливості */
 
 .features-sub-title {
-	font-size: 14px;
 	line-height: 1.14;
-	letter-spacing: 0.03em;
 	text-transform: uppercase;
 
 	color: var(--text-secondary-color);
 }
 
 .features-text {
-	font-size: 14px;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
 }
 
 /* Чим ми займаємося */
@@ -147,7 +133,6 @@ p {
 .section-title {
 	font-size: 36px;
 	line-height: 1.17;
-	letter-spacing: 0.03em;
 
 	color: var(--text-secondary-color);
 }
@@ -159,7 +144,6 @@ p {
 }
 
 .team-item {
-	color: #000;
 	background-color: var(--bg-primary-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
 		0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -170,14 +154,13 @@ p {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
-	letter-spacing: 0.03em;
 
 	color: var(--text-secondary-color);
 }
 
 .team-position {
+	font-size: 16px;
 	line-height: 1.19;
-	letter-spacing: 0.03em;
 }
 
 /* Футер */
@@ -190,16 +173,14 @@ p {
 	color: var(--text-white-color);
 }
 
-.address {
+.address-link {
 	font-style: normal;
-	font-size: 14px;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
 
 	color: var(--text-transparent-color);
 }
 
-.address-link {
+.map-link {
 	color: var(--text-white-color);
 }
 
@@ -216,6 +197,7 @@ p {
 
 .filter-btn:hover,
 .filter-btn:focus {
+	outline: none;
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -238,5 +220,4 @@ p {
 
 .example-text {
 	line-height: 1.88;
-	letter-spacing: 0.03em;
 }
