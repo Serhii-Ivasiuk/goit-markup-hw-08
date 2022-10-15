@@ -67,7 +67,7 @@ p {
 /* Хедер */
 
 .logo {
-	font-family: "Raleway";
+	font-family: "Raleway", Arial, sans-serif;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.19;
