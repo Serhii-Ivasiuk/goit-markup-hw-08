@@ -55,16 +55,44 @@ body {
 	color: var(--accent-color);
 }
 
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 /* Тимчасові стилі - при стилізації позиціонування прибрати*/
 
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
 	margin: 0;
 }
 
 /* Хедер */
+
+.header {
+	border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+	display: flex;
+}
+
+.main-nav {
+	display: flex;
+}
+
+.header-logo {
+	display: block;
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
+}
 
 .logo {
 	font-family: "Raleway", Arial, sans-serif;
@@ -76,25 +104,58 @@ p {
 	color: var(--accent-color);
 }
 
-.header-logo {
+.header-logo-part {
 	color: var(--text-additional-color);
 }
 
+.nav-list {
+	display: flex;
+}
+
+.nav-item:not(:last-child) {
+	margin-right: 50px;
+}
+
 .nav-link {
+	display: block;
+	padding: 32px 0;
+
 	color: var(--text-secondary-color);
 }
 
-.active{
+.active {
 	color: var(--accent-color);
+}
+
+.contact-list {
+	display: flex;
+	margin-left: auto;
+}
+
+.contact-item {
+}
+
+.contact-item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.contact-link {
+	display: block;
+	padding: 32px 0;
 }
 
 /* Герой */
 
 .hero {
+	padding: 200px 0;
+
+	text-align: center;
 	background-color: var(--bg-additional-color);
 }
 
 .hero-title {
+	margin-bottom: 30px;
+
 	font-weight: 900;
 	font-size: 44px;
 	line-height: 1.36;
@@ -105,6 +166,8 @@ p {
 }
 
 .hero-btn {
+	padding: 10px 32px;
+
 	font-weight: 700;
 	line-height: 1.88;
 	letter-spacing: 0.06em;
@@ -122,7 +185,21 @@ p {
 
 /* Особливості */
 
+.section {
+	padding: 94px 0;
+}
+
+.features-list {
+	display: flex;
+}
+
+.features-item:not(:last-child) {
+	margin-right: 30px;
+}
+
 .features-sub-title {
+	margin-bottom: 10px;
+
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
@@ -136,17 +213,38 @@ p {
 
 /* Чим ми займаємося */
 
+.work-section {
+	padding-top: 0;
+}
+
 .section-title {
+	margin-bottom: 50px;
+
 	font-size: 36px;
 	line-height: 1.17;
+	text-align: center;
 
 	color: var(--text-secondary-color);
+}
+
+.work-list {
+	display: flex;
+	gap: 30px;
+}
+
+.work-image {
+	display: block;
 }
 
 /* Наша команда */
 
 .team {
 	background-color: var(--bg-secondary-color);
+}
+
+.team-list {
+	display: flex;
+	gap: 30px;
 }
 
 .team-item {
@@ -156,7 +254,20 @@ p {
 	border-radius: 0px 0px 4px 4px;
 }
 
+.team-photo {
+	display: block;
+}
+
+.team-description {
+	width: 270px;
+	padding: 30px 0;
+
+	text-align: center;
+}
+
 .team-name {
+	margin-bottom: 10px;
+
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
@@ -172,11 +283,22 @@ p {
 /* Футер */
 
 .footer {
+	padding: 60px 0;
+
 	background: var(--bg-additional-color);
 }
 
 .footer-logo {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.footer-logo-part {
 	color: var(--text-white-color);
+}
+
+.address-item:not(:last-child) {
+	margin-bottom: 9px;
 }
 
 .address-link {
@@ -194,7 +316,17 @@ p {
 
 /* Портфоліо */
 
+.filter-list {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
 .filter-btn {
+	min-width: 73px;
+	padding: 6px 22px;
+
 	font-weight: 500;
 	line-height: 1.63;
 	letter-spacing: 0.03em;
@@ -214,11 +346,29 @@ p {
 
 /* Список робіт */
 
+.example-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+}
+
 .example-item {
+}
+
+.example-image {
+	display: block;
+}
+
+.example-description {
+	width: 370px;
+	padding: 20px 24px;
+
 	border: 1px solid #eeeeee;
 }
 
 .example-title {
+	padding-bottom: 4px;
+
 	font-size: 18px;
 	line-height: 2;
 	letter-spacing: 0.06em;
