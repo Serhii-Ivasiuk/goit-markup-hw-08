@@ -26,19 +26,16 @@ body {
 }
 
 .list {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 
 	list-style: none;
 }
 
 .link {
-	font-weight: 500;
-	line-height: 1.14;
-	letter-spacing: 0.02em;
-	text-decoration: none;
-
 	color: inherit;
+
+	text-decoration: none;
 }
 
 .button {
@@ -61,16 +58,20 @@ body {
 	padding: 0 15px;
 }
 
-/* Тимчасові стилі - при стилізації позиціонування прибрати*/
+/* Патерн Visually hidden */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-	margin: 0;
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 /* Хедер */
@@ -88,7 +89,6 @@ p {
 }
 
 .header-logo {
-	display: block;
 	padding-top: 24px;
 	padding-bottom: 25px;
 	margin-right: 93px;
@@ -120,6 +120,10 @@ p {
 	display: block;
 	padding: 32px 0;
 
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+
 	color: var(--text-secondary-color);
 }
 
@@ -132,9 +136,6 @@ p {
 	margin-left: auto;
 }
 
-.contact-item {
-}
-
 .contact-item:not(:last-child) {
 	margin-right: 50px;
 }
@@ -142,6 +143,10 @@ p {
 .contact-link {
 	display: block;
 	padding: 32px 0;
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
 }
 
 /* Герой */
@@ -154,6 +159,7 @@ p {
 }
 
 .hero-title {
+	margin-top: 0;
 	margin-bottom: 30px;
 
 	font-weight: 900;
@@ -193,11 +199,16 @@ p {
 	display: flex;
 }
 
+.features-item {
+	width: 270px;
+}
+
 .features-item:not(:last-child) {
 	margin-right: 30px;
 }
 
 .features-sub-title {
+	margin-top: 0;
 	margin-bottom: 10px;
 
 	font-size: 14px;
@@ -208,6 +219,9 @@ p {
 }
 
 .features-text {
+	margin-bottom: 0;
+	margin-top: 0;
+
 	line-height: 1.71;
 }
 
@@ -218,6 +232,7 @@ p {
 }
 
 .section-title {
+	margin-top: 0;
 	margin-bottom: 50px;
 
 	font-size: 36px;
@@ -232,8 +247,10 @@ p {
 	gap: 30px;
 }
 
-.work-image {
+.image {
 	display: block;
+	max-width: 100%;
+	height: auto;
 }
 
 /* Наша команда */
@@ -254,10 +271,6 @@ p {
 	border-radius: 0px 0px 4px 4px;
 }
 
-.team-photo {
-	display: block;
-}
-
 .team-description {
 	width: 270px;
 	padding: 30px 0;
@@ -266,6 +279,7 @@ p {
 }
 
 .team-name {
+	margin-top: 0;
 	margin-bottom: 10px;
 
 	font-weight: 500;
@@ -276,6 +290,9 @@ p {
 }
 
 .team-position {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	font-size: 16px;
 	line-height: 1.19;
 }
@@ -303,9 +320,7 @@ p {
 
 .address-link {
 	font-style: normal;
-	font-weight: 400;
 	line-height: 1.71;
-	letter-spacing: 0.03em;
 
 	color: var(--text-transparent-color);
 }
@@ -352,13 +367,6 @@ p {
 	gap: 30px;
 }
 
-.example-item {
-}
-
-.example-image {
-	display: block;
-}
-
 .example-description {
 	width: 370px;
 	padding: 20px 24px;
@@ -367,7 +375,8 @@ p {
 }
 
 .example-title {
-	padding-bottom: 4px;
+	margin-top: 0;
+	margin-bottom: 4px;
 
 	font-size: 18px;
 	line-height: 2;
@@ -377,6 +386,9 @@ p {
 }
 
 .example-text {
+	margin-top: 0;
+	margin-bottom: 0;
+
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 1.88;
