@@ -381,6 +381,16 @@ body {
 	background: var(--bg-additional-color);
 }
 
+.footer-wrap {
+	display: flex;
+}
+
+/* Блок адреси футера */
+
+.footer-address-wrap {
+	margin-right: 70px;
+}
+
 .footer-logo {
 	display: block;
 	margin-bottom: 20px;
@@ -403,6 +413,27 @@ body {
 
 .map-link {
 	color: var(--text-white-color);
+}
+
+/* Блок соц. мереж футера */
+
+.footer-social-wrap {
+	margin-top: 12px;
+}
+
+.footer-social-text {
+	display: inline-block;
+	margin-bottom: 20px;
+
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: var(--text-white-color);
+}
+
+.footer-social-link {
+	color: var(--text-white-color);
+	background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Портфоліо */
