@@ -10,6 +10,7 @@
 	--bg-primary-color: #ffffff;
 	--bg-secondary-color: #f5f4fa;
 	--bg-additional-color: #2f303a;
+	--icon-color: #afb1b8;
 
 	--accent-color: #2196f3;
 }
@@ -314,6 +315,35 @@ body {
 
 	font-size: 16px;
 	line-height: 1.19;
+}
+
+/* Постійні клієнти */
+
+.clients-list {
+	display: flex;
+	gap: 30px;
+	justify-content: center;
+}
+
+.client-link {
+	display: flex;
+	width: 170px;
+	height: 92px;
+
+	color: var(--icon-color);
+	border: 1px solid var(--icon-color);
+	border-radius: 4px;
+}
+
+.client-link:hover,
+.client-link:focus {
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+.icon-clients {
+	margin: auto;
+	fill: currentColor;
 }
 
 /* Футер */
