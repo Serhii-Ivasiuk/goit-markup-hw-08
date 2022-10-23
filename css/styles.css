@@ -392,6 +392,7 @@ body {
 
 .footer-wrap {
 	display: flex;
+	align-items: baseline;
 }
 
 /* Блок адреси футера */
@@ -425,10 +426,6 @@ body {
 }
 
 /* Блок соц. мереж футера */
-
-.footer-social-wrap {
-	margin-top: 12px;
-}
 
 .footer-social-text {
 	display: inline-block;
