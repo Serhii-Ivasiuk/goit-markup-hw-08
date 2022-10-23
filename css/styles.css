@@ -49,7 +49,6 @@ body {
 
 .interactive:hover,
 .interactive:focus {
-	outline: none;
 	color: var(--accent-color);
 }
 
@@ -192,7 +191,6 @@ body {
 
 .hero-btn:hover,
 .hero-btn:focus {
-	outline: none;
 	background: #188ce8;
 }
 
@@ -459,7 +457,6 @@ body {
 
 .filter-btn:hover,
 .filter-btn:focus {
-	outline: none;
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -480,7 +477,6 @@ body {
 
 .example-link:hover,
 .example-link:focus {
-	outline: none;
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
