@@ -213,6 +213,19 @@ body {
 	margin-right: 30px;
 }
 
+.features-picture {
+	display: flex;
+	height: 120px;
+	margin-bottom: 30px;
+
+	background: var(--bg-secondary-color);
+	border-radius: 4px;
+}
+
+.icon-features {
+	margin: auto;
+}
+
 .features-sub-title {
 	margin-top: 0;
 	margin-bottom: 10px;
