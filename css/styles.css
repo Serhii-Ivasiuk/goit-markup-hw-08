@@ -311,10 +311,37 @@ body {
 
 .team-position {
 	margin-top: 0;
-	margin-bottom: 0;
+	margin-bottom: 16px;
 
 	font-size: 16px;
 	line-height: 1.19;
+}
+
+/* Іконки соц. мереж команди */
+.social-list {
+	display: flex;
+	gap: 10px;
+	justify-content: center;
+}
+
+.social-link {
+	display: flex;
+	width: 44px;
+	height: 44px;
+
+	color: var(--icon-color);
+	border-radius: 50%;
+}
+
+.social-link:hover,
+.social-link:focus {
+	color: var(--text-white-color);
+	background-color: var(--accent-color);
+}
+
+.icon-social {
+	margin: auto;
+	fill: currentColor;
 }
 
 /* Постійні клієнти */
