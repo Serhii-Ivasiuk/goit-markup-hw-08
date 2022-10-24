@@ -117,7 +117,7 @@ body {
 }
 
 .nav-link {
-	display: block;
+	display: inline-block;
 	padding: 32px 0;
 
 	font-weight: 500;
@@ -158,14 +158,10 @@ body {
 /* Герой */
 
 .hero {
-	text-align: center;
-	background-color: var(--bg-additional-color);
-}
-
-.overlay {
 	max-width: 1600px;
 	margin: 0 auto;
 	padding: 200px 0;
+	text-align: center;
 
 	background-color: #c4c4c4;
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -225,15 +221,13 @@ body {
 
 .features-picture {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 120px;
 	margin-bottom: 30px;
 
 	background: var(--bg-secondary-color);
 	border-radius: 4px;
-}
-
-.icon-features {
-	margin: auto;
 }
 
 .features-sub-title {
@@ -335,6 +329,8 @@ body {
 
 .social-link {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 44px;
 	height: 44px;
 
@@ -349,7 +345,6 @@ body {
 }
 
 .icon-social {
-	margin: auto;
 	fill: currentColor;
 }
 
@@ -363,6 +358,8 @@ body {
 
 .client-link {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 170px;
 	height: 92px;
 
@@ -378,7 +375,6 @@ body {
 }
 
 .icon-clients {
-	margin: auto;
 	fill: currentColor;
 }
 
@@ -402,7 +398,7 @@ body {
 }
 
 .footer-logo {
-	display: block;
+	display: inline-block;
 	margin-bottom: 20px;
 }
 
@@ -480,7 +476,7 @@ body {
 }
 
 .example-link {
-	display: block;
+	display: inline-block;
 }
 
 .example-link:hover,
