@@ -215,14 +215,12 @@ img {
 
 .features-list {
 	display: flex;
+	gap: 30px;
 }
 
 .features-item {
-	width: 270px;
-}
-
-.features-item:not(:last-child) {
-	margin-right: 30px;
+	/* (100% ширини - gap 30px * 3 зазори між елементами, тобто на 1 менше, ніж елементів в рядку) / 4 елемента в рядку */
+	flex-basis: calc((100% - 30px * 3) / 4);
 }
 
 .features-picture {
