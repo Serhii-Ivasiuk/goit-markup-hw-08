@@ -53,6 +53,10 @@ img {
 	cursor: pointer;
 }
 
+.interactive {
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .interactive:hover,
 .interactive:focus {
 	color: var(--accent-color);
@@ -218,11 +222,13 @@ img {
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-	background: #188ce8;
+	background-color: #188ce8;
 }
 
 /* Особливості */
@@ -380,6 +386,9 @@ img {
 
 	color: var(--icon-color);
 	border-radius: 50%;
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
@@ -414,6 +423,9 @@ img {
 	color: var(--icon-color);
 	border: 1px solid var(--icon-color);
 	border-radius: 4px;
+
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
@@ -505,6 +517,10 @@ img {
 
 	color: var(--text-secondary-color);
 	background-color: var(--bg-secondary-color);
+
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
