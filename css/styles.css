@@ -515,6 +515,35 @@ img {
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+.example-thumb {
+	position: relative;
+	overflow: hidden;
+}
+
+.example-overlay-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	margin: 0;
+	padding: 63px 24px;
+
+	font-size: 18px;
+	line-height: 1.56;
+	letter-spacing: 0.03em;
+	color: var(--text-white-color);
+
+	background-color: rgba(33, 150, 243, 0.9);
+
+	transform: translateY(100%);
+}
+
+.example-link:hover .example-overlay-text,
+.example-link:focus .example-overlay-text {
+	transform: translateY(0);
+}
+
 .example-description {
 	padding: 20px 24px;
 
