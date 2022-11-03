@@ -13,6 +13,8 @@
 	--icon-color: #afb1b8;
 
 	--accent-color: #2196f3;
+
+	--transition-parameters: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Загальні стилі */
@@ -54,7 +56,7 @@ img {
 }
 
 .interactive {
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-parameters);
 }
 
 .interactive:hover,
@@ -223,7 +225,7 @@ img {
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: background-color var(--transition-parameters);
 }
 
 .hero-btn:hover,
@@ -387,8 +389,7 @@ img {
 	color: var(--icon-color);
 	border-radius: 50%;
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-parameters), background-color var(--transition-parameters);
 }
 
 .social-link:hover,
@@ -424,8 +425,7 @@ img {
 	border: 1px solid var(--icon-color);
 	border-radius: 4px;
 
-	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: border-color var(--transition-parameters), color var(--transition-parameters);
 }
 
 .client-link:hover,
@@ -510,8 +510,7 @@ img {
 
 	background-color: rgba(0, 0, 0, 0.2);
 
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: opacity var(--transition-parameters), visibility var(--transition-parameters);
 }
 
 .is-hidden {
@@ -538,7 +537,7 @@ img {
 	border-radius: 4px;
 
 	transform: translate(-50%, -50%) scale(1);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--transition-parameters);
 }
 
 .modal-close-btn {
@@ -581,9 +580,8 @@ img {
 	color: var(--text-secondary-color);
 	background-color: var(--bg-secondary-color);
 
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: color var(--transition-parameters), background-color var(--transition-parameters),
+		box-shadow var(--transition-parameters);
 }
 
 .filter-btn:hover,
@@ -609,7 +607,7 @@ img {
 .example-link {
 	display: inline-block;
 
-	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: box-shadow var(--transition-parameters);
 }
 
 .example-link:hover,
@@ -640,7 +638,7 @@ img {
 	background-color: rgba(33, 150, 243, 0.9);
 
 	transform: translateY(100%);
-	transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+	transition: transform var(--transition-parameters);
 }
 
 .example-link:hover .example-overlay-text,
