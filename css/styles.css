@@ -735,6 +735,30 @@ img {
 	margin-bottom: 30px;
 }
 
+/* Кастомний чекбокс через пустий span у розмітці (оригінальний чекбокс прихований за допомогою паттерну visually-hidden) */
+.icon-checkbox {
+	display: inline-block;
+	width: 16px;
+	height: 15px;
+	margin-right: 7px;
+
+	border: 2px solid var(--text-secondary-color);
+	border-radius: 2px;
+}
+
+/* Для того, щоб спрацюв селектори ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
+.checkbox-input:checked ~ .icon-checkbox {
+	border-color: var(--accent-color);
+	
+	background-color: var(--accent-color);
+	background-image: url(../images/check.svg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-origin: border-box;
+}
+/* /Кастомний чекбокс через пустий span у розмітці*/
+
 .checkbox-input {
 	margin-right: 7px;
 }

@@ -696,7 +696,8 @@
 					</label>
 					<!-- Чекбокс -->
 					<label class="checkbox-field">
-						<input class="checkbox-input" type="checkbox" name="policy" required />
+						<!-- Приховуємо оригінальний чекбокс прихований за допомогою паттерну visually-hidden -->
+						<input class="checkbox-input visually-hidden" type="checkbox" name="policy" required/>
 						<!-- Додаємо пустий спан для створення і стилізації кастомного чекбоксу -->
 						<span class="icon-checkbox"></span>
 						<span class="checkbox-label"
