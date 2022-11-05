@@ -693,11 +693,20 @@ img {
 }
 
 /* --- Вариант через :focus-within (не залежить від послідовності елементів в розмітці, але не всіма браузерами підтримується) --- */
-.form-field:hover .icon-іnput,
+/* .form-field:hover .icon-іnput,
 .form-field:focus-within .icon-іnput {
 	fill: var(--accent-color);
-}
+} */
 /* /Вариант через :focus-within */
+
+/* --- Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) ---*/
+
+/* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
+.form-input:hover + .icon-іnput,
+.form-input:focus ~ .icon-іnput {
+	fill: var(--accent-color);
+}
+/* --- /Вариант БЕЗ :focus-within --- */
 
 /* Портфоліо */
 
