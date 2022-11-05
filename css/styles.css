@@ -214,7 +214,9 @@ img {
 	color: var(--text-white-color);
 }
 
-.hero-btn {
+.hero-btn,
+.submit-btn {
+	min-width: 200px;
 	padding: 10px 32px;
 
 	font-weight: 700;
@@ -229,7 +231,9 @@ img {
 }
 
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.submit-btn:hover,
+.submit-btn:focus {
 	background-color: #188ce8;
 }
 
@@ -373,6 +377,7 @@ img {
 }
 
 /* Іконки соц. мереж команди */
+
 .social-list {
 	display: flex;
 	gap: 10px;
@@ -454,7 +459,7 @@ img {
 /* Блок адреси футера */
 
 .footer-address-wrap {
-	margin-right: 70px;
+	margin-right: 93px;
 }
 
 .footer-logo {
@@ -484,7 +489,7 @@ img {
 /* Блок соц. мереж футера */
 
 .footer-call-to-action {
-	display: inline-block;
+	display: block;
 	margin-bottom: 20px;
 
 	line-height: 1.14;
@@ -493,9 +498,61 @@ img {
 	color: var(--text-white-color);
 }
 
+.footer-social {
+	margin-right: 93px;
+}
+
 .footer-social-link {
 	color: var(--text-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Блок підписки футера */
+
+.footer-form-input {
+	width: 358px;
+	margin-right: 12px;
+	padding: 14px 16px;
+
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: 0.03em;
+
+	color: var(--text-white-color);
+	background-color: transparent;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+	border-radius: 4px;
+
+	transition: border-color var(--transition-parameters);
+}
+
+.footer-form-input:hover,
+.footer-form-input:focus {
+	outline: none;
+	border-color: var(--accent-color);
+}
+
+.footer-form-input::placeholder {
+	color: var(--text-transparent-color);
+}
+
+.footer-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	padding-left: 28px;
+	padding-right: 28px;
+}
+
+.footer-btn-text {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.icon-btn {
+	fill: currentColor;
 }
 
 /* Модальне вікно */
