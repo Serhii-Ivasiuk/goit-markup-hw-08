@@ -724,6 +724,35 @@ img {
 	color: rgba(117, 117, 117, 0.5);
 }
 
+/* Чекбокс форми */
+
+.checkbox-field {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.checkbox-input {
+	margin-right: 7px;
+}
+
+.checkbox-label {
+	line-height: 1.71;
+}
+
+.checkbox-label-link {
+	color: var(--accent-color);
+}
+
+.submit-btn {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* Портфоліо */
 
 .filter-list {
