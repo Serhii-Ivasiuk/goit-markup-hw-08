@@ -733,6 +733,8 @@ img {
 
 	margin-top: 20px;
 	margin-bottom: 30px;
+
+	cursor: pointer;
 }
 
 /* Кастомний чекбокс через пустий span у розмітці (оригінальний чекбокс прихований за допомогою паттерну visually-hidden) */
@@ -749,7 +751,7 @@ img {
 /* Для того, щоб спрацюв селектори ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
 .checkbox-input:checked ~ .icon-checkbox {
 	border-color: var(--accent-color);
-	
+
 	background-color: var(--accent-color);
 	background-image: url(../images/check.svg);
 	background-size: contain;
@@ -771,7 +773,7 @@ img {
 	color: var(--accent-color);
 }
 
-.submit-btn {
+.modal-form-btn {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
