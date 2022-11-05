@@ -622,6 +622,15 @@ img {
 	cursor: pointer;
 }
 
+.icon-close-btn {
+	transition: fill var(--transition-parameters);
+}
+
+.modal-close-btn:hover .icon-close-btn,
+.modal-close-btn:focus .icon-close-btn {
+	fill: var(--accent-color);
+}
+
 /* Портфоліо */
 
 .filter-list {
