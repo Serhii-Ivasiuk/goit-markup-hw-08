@@ -10,7 +10,9 @@
 	--bg-primary-color: #ffffff;
 	--bg-secondary-color: #f5f4fa;
 	--bg-additional-color: #2f303a;
+
 	--icon-color: #afb1b8;
+	--icon-form-color: #212121;
 
 	--accent-color: #2196f3;
 
@@ -592,6 +594,7 @@ img {
 
 	width: 528px;
 	height: 581px;
+	padding: 40px;
 
 	background: var(--bg-primary-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -629,6 +632,64 @@ img {
 .modal-close-btn:hover .icon-close-btn,
 .modal-close-btn:focus .icon-close-btn {
 	fill: var(--accent-color);
+}
+
+/* Форма заявки послуги */
+
+.form-tittle {
+	display: block;
+	margin-bottom: 12px;
+
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+
+	color: var(--text-secondary-color);
+}
+
+.form-field {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.form-label {
+	display: block;
+	margin-bottom: 4px;
+
+	font-size: 12px;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+}
+
+.form-input-wrap {
+	position: relative;
+}
+
+.form-input {
+	display: block;
+	width: 100%;
+	padding: 11px 12px 11px 42px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
+}
+
+.icon-іnput {
+	position: absolute;
+	top: 50%;
+	left: 12px;
+	transform: translateY(-50%);
+
+	fill: var(--icon-form-color);
+
+	pointer-events: none;
+}
+
+.form-input:hover,
+.form-input:focus {
+	outline: none;
+	border-color: var(--accent-color);
 }
 
 /* Портфоліо */
