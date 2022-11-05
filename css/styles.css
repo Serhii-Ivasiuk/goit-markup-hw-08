@@ -692,6 +692,13 @@ img {
 	border-color: var(--accent-color);
 }
 
+/* --- Вариант через :focus-within (не залежить від послідовності елементів в розмітці, але не всіма браузерами підтримується) --- */
+.form-field:hover .icon-іnput,
+.form-field:focus-within .icon-іnput {
+	fill: var(--accent-color);
+}
+/* /Вариант через :focus-within */
+
 /* Портфоліо */
 
 .filter-list {
