@@ -666,6 +666,7 @@ img {
 }
 
 .form-input-wrap {
+	display: block;
 	position: relative;
 }
 
