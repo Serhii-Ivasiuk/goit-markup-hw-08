@@ -619,10 +619,7 @@
 				<!-- Блок підписки футера -->
 				<div class="footer-subscription">
 					<b class="footer-call-to-action">Підпишіться на розсилку</b>
-					<form
-						name="subscription-form"
-						autocomplete="off"
-					>
+					<form name="subscription-form" autocomplete="off">
 						<input
 							class="footer-form-input"
 							type="email"
@@ -640,8 +637,7 @@
 			</div>
 		</footer>
 		<!-- Модальне вікно -->
-		<div data-modal class="backdrop">
-			// is-hidden - перернути цей клас назад на бекдроп після верстки форми
+		<div data-modal class="backdrop is-hidden">
 			<div class="modal">
 				<button data-modal-close class="modal-close-btn" type="button">
 					<svg class="icon-close-btn" width="18" height="18">
@@ -694,8 +690,7 @@
 					</label>
 					<!-- Чекбокс -->
 					<label class="checkbox-field">
-						<!-- Приховуємо оригінальний чекбокс прихований за допомогою паттерну visually-hidden -->
-						<input class="checkbox-input visually-hidden" type="checkbox" name="policy" required/>
+						<input class="checkbox-input visually-hidden" type="checkbox" name="policy" required />
 						<!-- Додаємо пустий спан для створення і стилізації кастомного чекбоксу -->
 						<span class="icon-checkbox"></span>
 						<span class="checkbox-label"

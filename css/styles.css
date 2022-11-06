@@ -593,7 +593,6 @@ img {
 	left: 50%;
 
 	width: 528px;
-	height: 581px;
 	padding: 40px;
 
 	background: var(--bg-primary-color);
@@ -673,6 +672,8 @@ img {
 
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+
+	transition: border-color var(--transition-parameters);
 }
 
 .icon-іnput {
@@ -684,6 +685,7 @@ img {
 	fill: var(--icon-form-color);
 
 	pointer-events: none;
+	transition: fill var(--transition-parameters);
 }
 
 .form-input:hover,
@@ -692,13 +694,6 @@ img {
 	border-color: var(--accent-color);
 }
 
-/* --- Вариант через :focus-within (не залежить від послідовності елементів в розмітці, але не всіма браузерами підтримується) --- */
-/* .form-field:hover .icon-іnput,
-.form-field:focus-within .icon-іnput {
-	fill: var(--accent-color);
-} */
-/* /Вариант через :focus-within */
-
 /* --- Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) ---*/
 
 /* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
@@ -706,7 +701,6 @@ img {
 .form-input:focus ~ .icon-іnput {
 	fill: var(--accent-color);
 }
-/* --- /Вариант БЕЗ :focus-within --- */
 
 /* Текстерія форми */
 
@@ -727,28 +721,37 @@ img {
 /* Чекбокс форми */
 
 .checkbox-field {
+	position: relative;
+
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
 	margin-top: 20px;
 	margin-bottom: 30px;
-
-	cursor: pointer;
 }
+
 
 /* Кастомний чекбокс через пустий span у розмітці (оригінальний чекбокс прихований за допомогою паттерну visually-hidden) */
 .icon-checkbox {
-	display: inline-block;
 	width: 16px;
 	height: 15px;
 	margin-right: 7px;
 
 	border: 2px solid var(--text-secondary-color);
 	border-radius: 2px;
+
+	cursor: pointer;
+	transition: border-color var(--transition-parameters);
 }
 
-/* Для того, щоб спрацюв селектори ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
+/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
+.icon-checkbox:hover,
+.checkbox-input:focus ~ .icon-checkbox {
+	border-color: var(--accent-color);
+}
+
+/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
 .checkbox-input:checked ~ .icon-checkbox {
 	border-color: var(--accent-color);
 
@@ -760,10 +763,6 @@ img {
 	background-origin: border-box;
 }
 /* /Кастомний чекбокс через пустий span у розмітці*/
-
-.checkbox-input {
-	margin-right: 7px;
-}
 
 .checkbox-label {
 	line-height: 1.71;
@@ -856,7 +855,8 @@ img {
 
 	background-color: rgba(33, 150, 243, 0.9);
 
-	transform: translateY(100%);
+	/* Змістив додатково на 1% оскільки при масштабуванні сторінки з'являється тонка синя смуга знизу */
+	transform: translateY(101%);
 	transition: transform var(--transition-parameters);
 }
 
