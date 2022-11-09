@@ -539,7 +539,6 @@ img {
 	transition: border-color var(--transition-parameters);
 }
 
-.footer-form-input:hover,
 .footer-form-input:focus {
 	outline: none;
 	border-color: var(--accent-color);
@@ -693,7 +692,6 @@ img {
 	transition: fill var(--transition-parameters);
 }
 
-.form-input:hover,
 .form-input:focus {
 	outline: none;
 	border-color: var(--accent-color);
@@ -702,7 +700,6 @@ img {
 /* --- Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) ---*/
 
 /* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
-.form-input:hover + .icon-іnput,
 .form-input:focus ~ .icon-іnput {
 	fill: var(--accent-color);
 }
