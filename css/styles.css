@@ -909,6 +909,9 @@ img {
 
 	background-color: rgba(33, 150, 243, 0.9);
 
+	/* Заборонємо виділяти текст оверлея */
+	user-select: none;
+
 	/* Змістив додатково на 1% оскільки при масштабуванні сторінки з'являється тонка синя смуга знизу */
 	transform: translateY(101%);
 	transition: transform var(--transition-parameters);
