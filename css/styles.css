@@ -94,7 +94,7 @@ img {
 	border-bottom: 1px solid #ececec;
 }
 
-.header-container {
+.header__container {
 	display: flex;
 }
 
@@ -102,7 +102,7 @@ img {
 	display: flex;
 }
 
-.header-logo {
+.header__logo {
 	padding-top: 24px;
 	padding-bottom: 25px;
 	margin-right: 93px;
@@ -114,42 +114,56 @@ img {
 	font-size: 26px;
 	line-height: 1.19;
 	letter-spacing: 0.03em;
+	text-decoration: none;
 
 	color: var(--accent-color);
 }
 
-.header-logo-part {
+.logo__part {
 	color: var(--text-additional-color);
 }
 
 .nav-list {
 	display: flex;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.nav-item {
+.nav-list__item {
 	position: relative;
 }
 
-.nav-item:not(:last-child) {
+.nav-list__item:not(:last-child) {
 	margin-right: 50px;
 }
 
-.nav-link {
+.nav-list__link {
 	display: inline-block;
 	padding: 32px 0;
 
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	text-decoration: none;
 
 	color: var(--text-secondary-color);
+
+	transition: color var(--transition-parameters);
 }
 
-.active {
+.nav-list__link:hover,
+.nav-list__link:focus {
 	color: var(--accent-color);
 }
 
-.active::after {
+.nav-list__link--active {
+	color: var(--accent-color);
+}
+
+.nav-list__link--active::after {
 	content: "";
 
 	position: absolute;
@@ -166,13 +180,18 @@ img {
 .contact-list {
 	display: flex;
 	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.contact-item:not(:last-child) {
+.contact-list__item:not(:last-child) {
 	margin-right: 50px;
 }
 
-.contact-link {
+.contact-list__link {
 	display: flex;
 	padding: 32px 0;
 	align-items: center;
@@ -180,9 +199,19 @@ img {
 	font-weight: 500;
 	line-height: 1.14;
 	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	color: inherit;
+
+	transition: color var(--transition-parameters);
 }
 
-.icon-contact {
+.contact-list__link:hover,
+.contact-list__link:focus {
+	color: var(--accent-color);
+}
+
+.contact-list__icon {
 	margin-right: 10px;
 	fill: currentColor;
 }
@@ -469,12 +498,12 @@ img {
 	margin-right: 93px;
 }
 
-.footer-logo {
+.footer__logo {
 	display: inline-block;
 	margin-bottom: 20px;
 }
 
-.footer-logo-part {
+.logo__part--light {
 	color: var(--text-white-color);
 }
 
