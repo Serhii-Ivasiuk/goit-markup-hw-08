@@ -315,7 +315,7 @@ img {
 
 /* Чим ми займаємося */
 
-.work-section {
+.section--no-padding-top {
 	padding-top: 0;
 }
 
@@ -333,18 +333,24 @@ img {
 .work-list {
 	display: flex;
 	gap: 30px;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.work-item {
+.work-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 3 - 1)) / 3 елемента в рядку */
 	flex-basis: calc((100% - 30px * (3 - 1)) / 3);
 }
 
-.work-thumb {
+.work-list__thumb {
 	position: relative;
 }
 
-.work-label {
+.work-list__label {
 	position: absolute;
 	left: 0;
 	bottom: 0;
