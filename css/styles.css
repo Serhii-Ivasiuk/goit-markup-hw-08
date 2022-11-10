@@ -268,17 +268,23 @@ img {
 	padding: 94px 0;
 }
 
-.features-list {
+.feature-list {
 	display: flex;
 	gap: 30px;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.features-item {
+.feature-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
 	flex-basis: calc((100% - 30px * (4 - 1)) / 4);
 }
 
-.features-picture {
+.feature-list__picture {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -289,7 +295,7 @@ img {
 	border-radius: 4px;
 }
 
-.features-sub-title {
+.feature-list__title {
 	margin-top: 0;
 	margin-bottom: 10px;
 
@@ -300,7 +306,7 @@ img {
 	color: var(--text-secondary-color);
 }
 
-.features-text {
+.feature-list__text {
 	margin-bottom: 0;
 	margin-top: 0;
 
@@ -313,7 +319,7 @@ img {
 	padding-top: 0;
 }
 
-.section-title {
+.section__title {
 	margin-top: 0;
 	margin-bottom: 50px;
 
