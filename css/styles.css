@@ -288,7 +288,7 @@ img {
 	flex-basis: calc((100% - 30px * (4 - 1)) / 4);
 }
 
-.feature-list__picture {
+.feature-list__icon-thumb {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -310,7 +310,7 @@ img {
 	color: var(--text-secondary-color);
 }
 
-.feature-list__text {
+.feature-list__description {
 	margin-bottom: 0;
 	margin-top: 0;
 
@@ -350,7 +350,7 @@ img {
 	flex-basis: calc((100% - 30px * (3 - 1)) / 3);
 }
 
-.work-list__thumb {
+.work-list__image-thumb {
 	position: relative;
 }
 
@@ -525,7 +525,7 @@ img {
 
 /* Блок адреси футера */
 
-.address-thumb {
+.address-wrap {
 	margin-right: 93px;
 }
 
@@ -581,7 +581,7 @@ img {
 	color: var(--text-white-color);
 }
 
-.social-thumb {
+.social-wrap {
 	margin-right: auto;
 }
 
@@ -735,7 +735,7 @@ img {
 	letter-spacing: 0.01em;
 }
 
-.request-form__input-thumb {
+.request-form__input-icon-thumb {
 	display: block;
 	position: relative;
 }
@@ -837,7 +837,7 @@ img {
 
 /* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
 .request-form__checkbox-icon:hover,
-.request-form__checkbox-input:focus ~ .icon-checkbox {
+.request-form__checkbox-input:focus ~ .request-form__checkbox-icon {
 	border-color: var(--accent-color);
 }
 
