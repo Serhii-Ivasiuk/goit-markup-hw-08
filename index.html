@@ -636,67 +636,73 @@
 			</div>
 		</footer>
 		<!-- Модальне вікно -->
-		<div data-modal class="backdrop is-hidden">
+		<div data-modal class="backdrop">
+			//is-hidden
 			<div class="modal">
-				<button data-modal-close class="modal-close-btn" type="button">
-					<svg class="icon-close-btn" width="18" height="18">
+				<button data-modal-close class="close-btn modal__close-btn" type="button">
+					<svg class="close-btn__icon" width="18" height="18">
 						<use href="./images/icons.svg#close"></use>
 					</svg>
 				</button>
 				<!-- Форма заявки послуги -->
-				<form name="request-form" autocomplete="off">
-					<b class="form-tittle">Залиште свої дані, ми вам передзвонимо</b>
+				<form class="request-form" name="request-form" autocomplete="off">
+					<b class="request-form__tittle">Залиште свої дані, ми вам передзвонимо</b>
 					<!-- Ім'я -->
-					<label class="form-field">
-						<span class="form-label">Ім'я</span>
-						<span class="form-input-wrap">
-							<input class="form-input" type="text" name="user-name" required />
-							<svg class="icon-іnput" width="18" height="18">
+					<label class="request-form__field">
+						<span class="request-form__label">Ім'я</span>
+						<span class="request-form__input-thumb">
+							<input class="request-form__input" type="text" name="user-name" required />
+							<svg class="request-form__input-icon" width="18" height="18">
 								<use href="./images/icons.svg#person-black"></use>
 							</svg>
 						</span>
 					</label>
 					<!-- Телефон -->
-					<label class="form-field">
-						<span class="form-label">Телефон</span>
-						<span class="form-input-wrap">
-							<input class="form-input" name="user-phone" type="tel" required />
-							<svg class="icon-іnput" width="18" height="18">
+					<label class="request-form__field">
+						<span class="request-form__label">Телефон</span>
+						<span class="request-form__input-thumb">
+							<input class="request-form__input" name="user-phone" type="tel" required />
+							<svg class="request-form__input-icon" width="18" height="18">
 								<use href="./images/icons.svg#phone-black"></use>
 							</svg>
 						</span>
 					</label>
 					<!-- Пошта -->
-					<label class="form-field">
-						<span class="form-label">Пошта</span>
-						<span class="form-input-wrap">
-							<input class="form-input" name="user-email" type="email" required />
-							<svg class="icon-іnput" width="18" height="18">
+					<label class="request-form__field">
+						<span class="request-form__label">Пошта</span>
+						<span class="request-form__input-thumb">
+							<input class="request-form__input" name="user-email" type="email" required />
+							<svg class="request-form__input-icon" width="18" height="18">
 								<use href="./images/icons.svg#email-black"></use>
 							</svg>
 						</span>
 					</label>
 					<!-- Текстерія форми -->
-					<label class="form-field">
-						<span class="form-label">Коментар</span>
+					<label class="request-form__field">
+						<span class="request-form__label">Коментар</span>
 						<textarea
-							class="form-textarea form-input"
+							class="request-form__textarea"
 							name="user-comment"
 							placeholder="Введіть текст"
 						></textarea>
 					</label>
 					<!-- Чекбокс -->
-					<label class="checkbox-field">
-						<input class="checkbox-input visually-hidden" type="checkbox" name="policy" required />
+					<label class="request-form__checkbox-field">
+						<input
+							class="request-form__checkbox-input visually-hidden"
+							type="checkbox"
+							name="policy"
+							required
+						/>
 						<!-- Додаємо пустий спан для створення і стилізації кастомного чекбоксу -->
-						<span class="icon-checkbox"></span>
-						<span class="checkbox-label"
+						<span class="request-form__checkbox-icon"></span>
+						<span class="request-form__checkbox-label"
 							>Погоджуюся з розсилкою та приймаю
-							<a class="checkbox-label-link" href="#">Умови договору</a></span
+							<a class="request-form__checkbox-label-link" href="#">Умови договору</a></span
 						>
 					</label>
 					<!-- Кнопка відправки форми -->
-					<button class="button modal-form-btn" type="submit">Відправити</button>
+					<button class="button request-form__button" type="submit">Відправити</button>
 				</form>
 			</div>
 		</div>

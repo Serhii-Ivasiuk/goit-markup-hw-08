@@ -676,11 +676,7 @@ img {
 	transition: transform var(--transition-parameters);
 }
 
-.modal-close-btn {
-	position: absolute;
-	top: 8px;
-	right: 8px;
-
+.close-btn {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -696,18 +692,24 @@ img {
 	cursor: pointer;
 }
 
-.icon-close-btn {
+.modal__close-btn {
+	position: absolute;
+	top: 8px;
+	right: 8px;
+}
+
+.close-btn__icon {
 	transition: fill var(--transition-parameters);
 }
 
-.modal-close-btn:hover .icon-close-btn,
-.modal-close-btn:focus .icon-close-btn {
+.close-btn:hover .close-btn__icon,
+.close-btn:focus .close-btn__icon {
 	fill: var(--accent-color);
 }
 
 /* Форма заявки послуги */
 
-.form-tittle {
+.request-form__tittle {
 	display: block;
 	margin-bottom: 12px;
 
@@ -719,12 +721,12 @@ img {
 	color: var(--text-secondary-color);
 }
 
-.form-field {
+.request-form__field {
 	display: block;
 	margin-bottom: 10px;
 }
 
-.form-label {
+.request-form__label {
 	display: block;
 	margin-bottom: 4px;
 
@@ -733,12 +735,12 @@ img {
 	letter-spacing: 0.01em;
 }
 
-.form-input-wrap {
+.request-form__input-thumb {
 	display: block;
 	position: relative;
 }
 
-.form-input {
+.request-form__input {
 	display: block;
 	width: 100%;
 	padding: 11px 12px 11px 42px;
@@ -749,7 +751,7 @@ img {
 	transition: border-color var(--transition-parameters);
 }
 
-.icon-іnput {
+.request-form__input-icon {
 	position: absolute;
 	top: 50%;
 	left: 12px;
@@ -761,7 +763,7 @@ img {
 	transition: fill var(--transition-parameters);
 }
 
-.form-input:focus {
+.request-form__input:focus {
 	outline: none;
 	border-color: var(--accent-color);
 }
@@ -769,19 +771,31 @@ img {
 /* --- Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) ---*/
 
 /* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
-.form-input:focus ~ .icon-іnput {
+.request-form__input:focus ~ .request-form__input-icon {
 	fill: var(--accent-color);
 }
 
 /* Текстерія форми */
 
-.form-textarea {
+.request-form__textarea {
+	display: block;
+	width: 100%;
 	height: 120px;
 	padding: 12px 16px;
+
+	border: 1px solid rgba(33, 33, 33, 0.2);
+	border-radius: 4px;
 	resize: none;
+
+	transition: border-color var(--transition-parameters);
 }
 
-.form-textarea::placeholder {
+.request-form__textarea:focus {
+	outline: none;
+	border-color: var(--accent-color);
+}
+
+.request-form__textarea::placeholder {
 	font-size: 12px;
 	line-height: 1.17;
 	letter-spacing: 0.01em;
@@ -791,7 +805,7 @@ img {
 
 /* Чекбокс форми */
 
-.checkbox-field {
+.request-form__checkbox-field {
 	position: relative;
 
 	display: flex;
@@ -803,13 +817,13 @@ img {
 }
 
 /* Позиціонуємо текст-підказку оригінального чекбоксу (прихований через visually-hidden) так, щоб вона вказувала саме на кастомний чекбокс */
-.checkbox-input {
+.request-form__checkbox-input {
 	top: 20px;
 	left: 30px;
 }
 
 /* Кастомний чекбокс через пустий span у розмітці (оригінальний чекбокс прихований за допомогою паттерну visually-hidden) */
-.icon-checkbox {
+.request-form__checkbox-icon {
 	width: 16px;
 	height: 15px;
 	margin-right: 7px;
@@ -822,13 +836,13 @@ img {
 }
 
 /* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
-.icon-checkbox:hover,
-.checkbox-input:focus ~ .icon-checkbox {
+.request-form__checkbox-icon:hover,
+.request-form__checkbox-input:focus ~ .icon-checkbox {
 	border-color: var(--accent-color);
 }
 
 /* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
-.checkbox-input:checked ~ .icon-checkbox {
+.request-form__checkbox-input:checked ~ .request-form__checkbox-icon {
 	border-color: var(--accent-color);
 
 	background-color: var(--accent-color);
@@ -839,15 +853,15 @@ img {
 	background-origin: border-box;
 }
 
-.checkbox-label {
+.request-form__checkbox-label {
 	line-height: 1.71;
 }
 
-.checkbox-label-link {
+.request-form__checkbox-label-link {
 	color: var(--accent-color);
 }
 
-.modal-form-btn {
+.request-form__button {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
