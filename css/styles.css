@@ -238,6 +238,10 @@ img {
 }
 
 .button {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
 	min-width: 200px;
 	padding: 10px 32px;
 
@@ -514,14 +518,14 @@ img {
 	background: var(--bg-additional-color);
 }
 
-.footer-wrap {
+.footer__container {
 	display: flex;
 	align-items: baseline;
 }
 
 /* Блок адреси футера */
 
-.footer-address-wrap {
+.address-thumb {
 	margin-right: 93px;
 }
 
@@ -534,24 +538,40 @@ img {
 	color: var(--text-white-color);
 }
 
-.address-item:not(:last-child) {
+.address-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.address-list__item:not(:last-child) {
 	margin-bottom: 9px;
 }
 
-.address-link {
+.address-list__link {
 	font-style: normal;
 	line-height: 1.71;
+	text-decoration: none;
 
 	color: var(--text-transparent-color);
+
+	transition: color var(--transition-parameters);
 }
 
-.map-link {
+.address-list__link:hover,
+.address-list__link:focus {
+	color: var(--accent-color);
+}
+
+.address-list__link--white {
 	color: var(--text-white-color);
 }
 
 /* Блок соц. мереж футера */
 
-.footer-call-to-action {
+.call-to-action {
 	display: block;
 	margin-bottom: 20px;
 
@@ -561,11 +581,11 @@ img {
 	color: var(--text-white-color);
 }
 
-.footer-social {
+.social-thumb {
 	margin-right: auto;
 }
 
-.footer-social-link {
+.social-list__link--white {
 	color: var(--text-white-color);
 	background-color: rgba(255, 255, 255, 0.1);
 }
@@ -577,7 +597,7 @@ img {
 	gap: 12px;
 }
 
-.footer-form-input {
+.subscription-form__input {
 	width: 358px;
 	padding: 14px 16px;
 
@@ -595,29 +615,22 @@ img {
 	transition: border-color var(--transition-parameters);
 }
 
-.footer-form-input:focus {
+.subscription-form__input:focus {
 	outline: none;
 	border-color: var(--accent-color);
 }
 
-.footer-form-input::placeholder {
+.subscription-form__input::placeholder {
 	color: var(--text-transparent-color);
 }
 
-.footer-btn {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+.subscription-form__button {
 	padding-left: 28px;
 	padding-right: 28px;
 }
 
-.footer-btn-text {
-	display: inline-block;
-	margin-right: 10px;
-}
-
-.icon-btn {
+.button__icon {
+	margin-left: 10px;
 	fill: currentColor;
 }
 
@@ -846,6 +859,7 @@ img {
 	display: flex;
 	gap: 8px;
 	justify-content: center;
+
 	margin-bottom: 50px;
 }
 
