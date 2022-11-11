@@ -464,18 +464,24 @@ img {
 
 /* Постійні клієнти */
 
-.clients-list {
+.client-list {
 	display: flex;
 	gap: 30px;
 	justify-content: center;
+
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.client-item {
+.client-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 6 - 1)) / 6 елементів в рядку */
 	flex-basis: calc((100% - 30px * (6 - 1)) / 6);
 }
 
-.client-link {
+.client-list__link {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -483,18 +489,20 @@ img {
 
 	color: var(--icon-color);
 	border: 1px solid var(--icon-color);
+
 	border-radius: 4px;
+	text-decoration: none;
 
 	transition: border-color var(--transition-parameters), color var(--transition-parameters);
 }
 
-.client-link:hover,
-.client-link:focus {
+.client-list__link:hover,
+.client-list__link:focus {
 	border-color: var(--accent-color);
 	color: var(--accent-color);
 }
 
-.icon-clients {
+.client-list__icon {
 	fill: currentColor;
 }
 
