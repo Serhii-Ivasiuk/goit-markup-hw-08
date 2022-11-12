@@ -44,9 +44,9 @@ img {
 }
 
 .link {
-	color: inherit;
-
 	text-decoration: none;
+
+	color: inherit;
 }
 
 .interactive {
@@ -95,9 +95,9 @@ img {
 }
 
 .header__logo {
+	margin-right: 93px;
 	padding-top: 24px;
 	padding-bottom: 25px;
-	margin-right: 93px;
 }
 
 .logo {
@@ -185,8 +185,8 @@ img {
 
 .contact-list__link {
 	display: flex;
-	padding: 32px 0;
 	align-items: center;
+	padding: 32px 0;
 
 	font-weight: 500;
 	line-height: 1.14;
@@ -214,6 +214,7 @@ img {
 	max-width: 1600px;
 	margin: 0 auto;
 	padding: 200px 0;
+
 	text-align: center;
 
 	background-color: #c4c4c4;
@@ -241,7 +242,6 @@ img {
 	display: inline-flex;
 	justify-content: center;
 	align-items: center;
-
 	min-width: 200px;
 	padding: 10px 32px;
 
@@ -253,7 +253,6 @@ img {
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 	border: none;
 	border-radius: 4px;
 	cursor: pointer;
@@ -275,7 +274,6 @@ img {
 .feature-list {
 	display: flex;
 	gap: 30px;
-
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -337,7 +335,6 @@ img {
 .work-list {
 	display: flex;
 	gap: 30px;
-
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -381,7 +378,6 @@ img {
 .team-list {
 	display: flex;
 	gap: 30px;
-
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -429,7 +425,6 @@ img {
 	display: flex;
 	gap: 10px;
 	justify-content: center;
-
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -448,6 +443,7 @@ img {
 	align-items: center;
 	width: 100%;
 	height: 100%;
+
 	text-decoration: none;
 
 	color: var(--icon-color);
@@ -472,7 +468,6 @@ img {
 	display: flex;
 	gap: 30px;
 	justify-content: center;
-
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -491,11 +486,11 @@ img {
 	align-items: center;
 	height: 92px;
 
+	text-decoration: none;
+
 	color: var(--icon-color);
 	border: 1px solid var(--icon-color);
-
 	border-radius: 4px;
-	text-decoration: none;
 
 	transition: border-color var(--transition-parameters), color var(--transition-parameters);
 }
@@ -607,7 +602,6 @@ img {
 
 	color: var(--text-white-color);
 	background-color: transparent;
-
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 	border-radius: 4px;
@@ -673,6 +667,7 @@ img {
 	border-radius: 4px;
 
 	transform: translate(-50%, -50%) scale(1);
+
 	transition: transform var(--transition-parameters);
 }
 
@@ -680,7 +675,6 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
 	width: 30px;
 	height: 30px;
 	padding: 0;
@@ -688,7 +682,6 @@ img {
 	background-color: var(--bg-primary-color);
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	border-radius: 50%;
-
 	cursor: pointer;
 }
 
@@ -755,11 +748,12 @@ img {
 	position: absolute;
 	top: 50%;
 	left: 12px;
-	transform: translateY(-50%);
 
 	fill: var(--icon-form-color);
-
 	pointer-events: none;
+
+	transform: translateY(-50%);
+
 	transition: fill var(--transition-parameters);
 }
 
@@ -830,8 +824,8 @@ img {
 
 	border: 2px solid var(--text-secondary-color);
 	border-radius: 2px;
-
 	cursor: pointer;
+
 	transition: border-color var(--transition-parameters);
 }
 
@@ -844,7 +838,6 @@ img {
 /* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
 .request-form__checkbox-input:checked ~ .request-form__checkbox-icon {
 	border-color: var(--accent-color);
-
 	background-color: var(--accent-color);
 	background-image: url(../images/check.svg);
 	background-size: contain;
@@ -873,7 +866,6 @@ img {
 	display: flex;
 	gap: 8px;
 	justify-content: center;
-
 	margin-bottom: 50px;
 }
 
@@ -941,8 +933,8 @@ img {
 	font-size: 18px;
 	line-height: 1.56;
 	letter-spacing: 0.03em;
-	color: var(--text-white-color);
 
+	color: var(--text-white-color);
 	background-color: rgba(33, 150, 243, 0.9);
 
 	/* Заборонємо виділяти текст оверлея */
@@ -950,6 +942,7 @@ img {
 
 	/* Змістив додатково на 1% оскільки при масштабуванні сторінки з'являється тонка синя смуга знизу */
 	transform: translateY(101%);
+
 	transition: transform var(--transition-parameters);
 }
 
