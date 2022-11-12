@@ -345,6 +345,7 @@ img {
 .work-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 3 - 1)) / 3 елемента в рядку */
 	flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+	max-width: 370px;
 }
 
 .work-list__image-thumb {
@@ -388,6 +389,7 @@ img {
 .team-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
 	flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+	max-width: 270px;
 
 	background-color: var(--bg-primary-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -916,8 +918,8 @@ img {
 .example-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 3 - 1)) / 3 елементів в рядку */
 	flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+	max-width: 370px;
 }
-
 .example-list__link {
 	display: inline-block;
 	text-decoration: none;
