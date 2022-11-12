@@ -866,26 +866,34 @@ img {
 	display: flex;
 	gap: 8px;
 	justify-content: center;
+	margin-top: 0;
 	margin-bottom: 50px;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.filter-btn {
+.filter-list__button {
 	min-width: 73px;
 	padding: 6px 22px;
 
+	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.63;
 	letter-spacing: 0.03em;
 
 	color: var(--text-secondary-color);
 	background-color: var(--bg-secondary-color);
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
 
 	transition: color var(--transition-parameters), background-color var(--transition-parameters),
 		box-shadow var(--transition-parameters);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.filter-list__button:hover,
+.filter-list__button:focus {
 	color: var(--text-white-color);
 	background-color: var(--accent-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -898,30 +906,37 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
 }
 
-.example-item {
+.example-list__item {
 	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 3 - 1)) / 3 елементів в рядку */
 	flex-basis: calc((100% - 30px * (3 - 1)) / 3);
 }
-.example-link {
-	display: inline-block;
 
+.example-list__link {
+	display: inline-block;
+	text-decoration: none;
+	color: inherit;
 	transition: box-shadow var(--transition-parameters);
 }
 
-.example-link:hover,
-.example-link:focus {
+.example-list__link:hover,
+.example-list__link:focus {
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.example-thumb {
+.example-list__image-thumb {
 	position: relative;
 	overflow: hidden;
 }
 
-.example-overlay-text {
+.example-list__image-overlay-text {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -946,19 +961,19 @@ img {
 	transition: transform var(--transition-parameters);
 }
 
-.example-link:hover .example-overlay-text,
-.example-link:focus .example-overlay-text {
+.example-list__link:hover .example-list__image-overlay-text,
+.example-list__link:focus .example-list__image-overlay-text {
 	transform: translateY(0);
 }
 
-.example-description {
+.example-list__description {
 	padding: 20px 24px;
 
 	border: 1px solid #eeeeee;
 	border-top: none;
 }
 
-.example-title {
+.example-list__title {
 	margin-top: 0;
 	margin-bottom: 4px;
 
@@ -969,7 +984,7 @@ img {
 	color: var(--text-secondary-color);
 }
 
-.example-text {
+.example-list__text {
 	margin-top: 0;
 	margin-bottom: 0;
 
