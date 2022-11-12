@@ -36,28 +36,6 @@ img {
 	height: auto;
 }
 
-.list {
-	margin: 0;
-	padding: 0;
-
-	list-style: none;
-}
-
-.link {
-	text-decoration: none;
-
-	color: inherit;
-}
-
-.interactive {
-	transition: color var(--transition-parameters);
-}
-
-.interactive:hover,
-.interactive:focus {
-	color: var(--accent-color);
-}
-
 .container {
 	width: 1200px;
 	margin: 0 auto;
