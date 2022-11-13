@@ -18,14 +18,19 @@
 	cursor: pointer;
 
 	transition: background-color $transition-parameters;
-}
 
-.button:hover,
-.button:focus {
-	background-color: #188ce8;
+	&:hover,
+	&:focus {
+		background-color: #188ce8;
+	}
 }
 
 .button__icon {
 	margin-left: 10px;
 	fill: currentColor;
+}
+
+.subscription-form__button {
+	padding-left: 28px;
+	padding-right: 28px;
 }

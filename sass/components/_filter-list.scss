@@ -26,12 +26,12 @@
 
 	transition: color $transition-parameters, background-color $transition-parameters,
 		box-shadow $transition-parameters;
-}
 
-.filter-list__button:hover,
-.filter-list__button:focus {
-	color: $text-white-color;
-	background-color: $accent-color;
-	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-		0px 2px 2px rgba(0, 0, 0, 0.12);
+	&:hover,
+	&:focus {
+		color: $text-white-color;
+		background-color: $accent-color;
+		box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+			0px 2px 2px rgba(0, 0, 0, 0.12);
+	}
 }

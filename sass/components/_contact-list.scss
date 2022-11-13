@@ -25,11 +25,11 @@
 	color: inherit;
 
 	transition: color $transition-parameters;
-}
 
-.contact-list__link:hover,
-.contact-list__link:focus {
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 
 .contact-list__icon {

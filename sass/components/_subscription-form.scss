@@ -18,18 +18,13 @@
 	border-radius: 4px;
 
 	transition: border-color $transition-parameters;
-}
 
-.subscription-form__input:focus {
-	outline: none;
-	border-color: $accent-color;
-}
+	&:focus {
+		outline: none;
+		border-color: $accent-color;
+	}
 
-.subscription-form__input::placeholder {
-	color: $text-transparent-color;
-}
-
-.subscription-form__button {
-	padding-left: 28px;
-	padding-right: 28px;
+	&::placeholder {
+		color: $text-transparent-color;
+	}
 }

@@ -22,13 +22,13 @@
 	color: $text-transparent-color;
 
 	transition: color $transition-parameters;
-}
 
-.address-list__link:hover,
-.address-list__link:focus {
-	color: $accent-color;
-}
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 
-.address-list__link--white {
-	color: $text-white-color;
+	&--white {
+		color: $text-white-color;
+	}
 }

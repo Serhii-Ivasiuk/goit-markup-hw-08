@@ -27,27 +27,27 @@
 	color: $text-secondary-color;
 
 	transition: color $transition-parameters;
-}
 
-.nav-list__link:hover,
-.nav-list__link:focus {
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 
 .nav-list__link--active {
 	color: $accent-color;
-}
 
-.nav-list__link--active::after {
-	content: "";
+	&::after {
+		content: "";
 
-	position: absolute;
-	left: 0;
-	bottom: -1px;
+		position: absolute;
+		left: 0;
+		bottom: -1px;
 
-	width: 100%;
-	height: 4px;
+		width: 100%;
+		height: 4px;
 
-	background-color: $accent-color;
-	border-radius: 2px;
+		background-color: $accent-color;
+		border-radius: 2px;
+	}
 }

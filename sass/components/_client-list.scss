@@ -27,12 +27,12 @@
 	border-radius: 4px;
 
 	transition: border-color $transition-parameters, color $transition-parameters;
-}
 
-.client-list__link:hover,
-.client-list__link:focus {
-	border-color: $accent-color;
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+		color: $accent-color;
+	}
 }
 
 .client-list__icon {

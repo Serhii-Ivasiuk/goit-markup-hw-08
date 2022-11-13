@@ -20,9 +20,9 @@
 
 .close-btn__icon {
 	transition: fill $transition-parameters;
-}
 
-.close-btn:hover .close-btn__icon,
-.close-btn:focus .close-btn__icon {
-	fill: $accent-color;
+	.close-btn:hover &,
+	.close-btn:focus & {
+		fill: $accent-color;
+	}
 }

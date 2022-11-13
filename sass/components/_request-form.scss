@@ -38,11 +38,11 @@
 	border-radius: 4px;
 
 	transition: border-color $transition-parameters;
-}
 
-.request-form__input:focus {
-	outline: none;
-	border-color: $accent-color;
+	&:focus {
+		outline: none;
+		border-color: $accent-color;
+	}
 }
 
 .request-form__input-icon {
@@ -56,13 +56,13 @@
 	transform: translateY(-50%);
 
 	transition: fill $transition-parameters;
-}
 
-/* --- Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) ---*/
+	/* Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) */
 
-/* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
-.request-form__input:focus ~ .request-form__input-icon {
-	fill: $accent-color;
+	/* Для того, щоб спрацювали селектори + або ~ треба щоб icon-іnput йшов в розмітці НИЖЧЕ form-input (+ для першого сусіда ЗНИЗУ ~ для будь-якого сусіда ЗНИЗУ) */
+	.request-form__input:focus ~ & {
+		fill: $accent-color;
+	}
 }
 
 .request-form__textarea {
@@ -76,19 +76,19 @@
 	resize: none;
 
 	transition: border-color $transition-parameters;
-}
 
-.request-form__textarea:focus {
-	outline: none;
-	border-color: $accent-color;
-}
+	&:focus {
+		outline: none;
+		border-color: $accent-color;
+	}
 
-.request-form__textarea::placeholder {
-	font-size: 12px;
-	line-height: 1.17;
-	letter-spacing: 0.01em;
+	&::placeholder {
+		font-size: 12px;
+		line-height: 1.17;
+		letter-spacing: 0.01em;
 
-	color: rgba(117, 117, 117, 0.5);
+		color: rgba(117, 117, 117, 0.5);
+	}
 }
 
 .request-form__checkbox-field {
@@ -119,23 +119,23 @@
 	cursor: pointer;
 
 	transition: border-color $transition-parameters;
-}
 
-/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
-.request-form__checkbox-icon:hover,
-.request-form__checkbox-input:focus ~ .request-form__checkbox-icon {
-	border-color: $accent-color;
-}
+	/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
+	&:hover,
+	.request-form__checkbox-input:focus ~ & {
+		border-color: $accent-color;
+	}
 
-/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
-.request-form__checkbox-input:checked ~ .request-form__checkbox-icon {
-	border-color: $accent-color;
-	background-color: $accent-color;
-	background-image: url(../images/check.svg);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	background-origin: border-box;
+	/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
+	.request-form__checkbox-input:checked ~ & {
+		border-color: $accent-color;
+		background-color: $accent-color;
+		background-image: url(../images/check.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-origin: border-box;
+	}
 }
 
 .request-form__checkbox-label {

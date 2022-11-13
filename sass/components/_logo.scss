@@ -22,8 +22,8 @@
 
 .logo__part {
 	color: $text-additional-color;
-}
 
-.logo__part--light {
-	color: $text-white-color;
+	&--light {
+		color: $text-white-color;
+	}
 }
