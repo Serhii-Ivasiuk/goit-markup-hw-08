@@ -1,0 +1,43 @@
+.feature-list {
+	display: flex;
+	gap: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.feature-list__item {
+	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
+	flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+}
+
+.feature-list__icon-thumb {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	margin-bottom: 30px;
+
+	background: $bg-secondary-color;
+	border-radius: 4px;
+}
+
+.feature-list__title {
+	margin-top: 0;
+	margin-bottom: 10px;
+
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	color: $text-secondary-color;
+}
+
+.feature-list__description {
+	margin-bottom: 0;
+	margin-top: 0;
+
+	line-height: 1.71;
+}

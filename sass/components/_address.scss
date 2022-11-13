@@ -1,0 +1,34 @@
+.address-wrap {
+	margin-right: 93px;
+}
+
+.address-list {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.address-list__item:not(:last-child) {
+	margin-bottom: 9px;
+}
+
+.address-list__link {
+	font-style: normal;
+	line-height: 1.71;
+	text-decoration: none;
+
+	color: $text-transparent-color;
+
+	transition: color $transition-parameters;
+}
+
+.address-list__link:hover,
+.address-list__link:focus {
+	color: $accent-color;
+}
+
+.address-list__link--white {
+	color: $text-white-color;
+}

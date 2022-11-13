@@ -1,0 +1,38 @@
+.contact-list {
+	display: flex;
+	margin-left: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.contact-list__item:not(:last-child) {
+	margin-right: 50px;
+}
+
+.contact-list__link {
+	display: flex;
+	align-items: center;
+	padding: 32px 0;
+
+	font-weight: 500;
+	line-height: 1.14;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+
+	color: inherit;
+
+	transition: color $transition-parameters;
+}
+
+.contact-list__link:hover,
+.contact-list__link:focus {
+	color: $accent-color;
+}
+
+.contact-list__icon {
+	margin-right: 10px;
+	fill: currentColor;
+}

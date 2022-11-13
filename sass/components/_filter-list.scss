@@ -1,0 +1,37 @@
+.filter-list {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-top: 0;
+	margin-bottom: 50px;
+	padding-left: 0;
+
+	list-style: none;
+}
+
+.filter-list__button {
+	min-width: 73px;
+	padding: 6px 22px;
+
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.63;
+	letter-spacing: 0.03em;
+
+	color: $text-secondary-color;
+	background-color: $bg-secondary-color;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	transition: color $transition-parameters, background-color $transition-parameters,
+		box-shadow $transition-parameters;
+}
+
+.filter-list__button:hover,
+.filter-list__button:focus {
+	color: $text-white-color;
+	background-color: $accent-color;
+	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+		0px 2px 2px rgba(0, 0, 0, 0.12);
+}
