@@ -1,9 +1,8 @@
 .filter-list {
 	@extend %listReset;
 
-	display: flex;
+	@include flexCenteringXY();
 	gap: 8px;
-	justify-content: center;
 	margin-bottom: 50px;
 }
 

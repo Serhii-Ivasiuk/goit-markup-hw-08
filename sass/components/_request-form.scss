@@ -94,9 +94,7 @@
 .request-form__checkbox-field {
 	position: relative;
 
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	@include flexCenteringXY();
 
 	margin-top: 20px;
 	margin-bottom: 30px;

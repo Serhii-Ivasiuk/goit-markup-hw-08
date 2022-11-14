@@ -6,8 +6,7 @@
 }
 
 .contact-list__link {
-	display: flex;
-	align-items: center;
+	@include flexCenteringXY();
 	padding: 32px 0;
 
 	font-weight: 500;

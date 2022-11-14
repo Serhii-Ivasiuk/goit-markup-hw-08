@@ -10,9 +10,7 @@
 }
 
 .feature-list__icon-thumb {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flexCenteringXY();
 	height: 120px;
 	margin-bottom: 30px;
 

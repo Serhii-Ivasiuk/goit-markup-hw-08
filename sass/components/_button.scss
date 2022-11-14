@@ -1,7 +1,5 @@
 .button {
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
+	@include flexCenteringXY(inline-flex);
 	min-width: 200px;
 	padding: 10px 32px;
 

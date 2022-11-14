@@ -3,7 +3,6 @@
 
 	display: flex;
 	gap: 30px;
-	justify-content: center;
 }
 
 .client-list__item {
@@ -12,9 +11,7 @@
 }
 
 .client-list__link {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include flexCenteringXY();
 	height: 92px;
 
 	text-decoration: none;

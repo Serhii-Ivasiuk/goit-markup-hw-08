@@ -1,0 +1,5 @@
+@mixin flexCenteringXY($flex-type: flex) {
+	display: $flex-type;
+	justify-content: center;
+	align-items: center;
+}

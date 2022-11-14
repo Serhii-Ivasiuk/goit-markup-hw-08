@@ -149,6 +149,7 @@ img {
 
 .contact-list__link {
   display: flex;
+  justify-content: center;
   align-items: center;
   padding: 32px 0;
   font-weight: 500;
@@ -324,8 +325,9 @@ img {
 
 .social-list {
   display: flex;
-  gap: 10px;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .social-list__item {
@@ -360,7 +362,6 @@ img {
 .client-list {
   display: flex;
   gap: 30px;
-  justify-content: center;
 }
 
 .client-list__item {
@@ -609,8 +610,8 @@ img {
 .request-form__checkbox-field {
   position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -662,8 +663,9 @@ img {
 
 .filter-list {
   display: flex;
-  gap: 8px;
   justify-content: center;
+  align-items: center;
+  gap: 8px;
   margin-bottom: 50px;
 }
 
