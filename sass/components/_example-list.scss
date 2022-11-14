@@ -1,9 +1,9 @@
 .example-list {
-	@extend %listReset;
-
 	display: flex;
 	flex-wrap: wrap;
 	gap: 30px;
+
+	@extend %listReset;
 }
 
 .example-list__item {

@@ -1,8 +1,8 @@
 .team-list {
-	@extend %listReset;
-
 	display: flex;
 	gap: 30px;
+
+	@extend %listReset;
 }
 
 .team-list__item {

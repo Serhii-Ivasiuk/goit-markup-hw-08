@@ -1,8 +1,8 @@
 .contact-list {
-	@extend %listReset;
-
 	display: flex;
 	gap: 50px;
+
+	@extend %listReset;
 }
 
 .contact-list__link {

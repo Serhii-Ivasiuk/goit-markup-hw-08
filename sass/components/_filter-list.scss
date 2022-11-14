@@ -1,9 +1,9 @@
 .filter-list {
-	@extend %listReset;
-
 	@include flexCenteringXY();
 	gap: 8px;
 	margin-bottom: 50px;
+
+	@extend %listReset;
 }
 
 .filter-list__button {
