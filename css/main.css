@@ -67,6 +67,7 @@ img {
 
 .main-nav {
   display: flex;
+  margin-right: auto;
 }
 
 .logo {
@@ -99,6 +100,7 @@ img {
 
 .nav-list {
   display: flex;
+  gap: 50px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
@@ -107,10 +109,6 @@ img {
 
 .nav-list__item {
   position: relative;
-}
-
-.nav-list__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav-list__link {
@@ -143,15 +141,11 @@ img {
 
 .contact-list {
   display: flex;
-  margin-left: auto;
+  gap: 50px;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-}
-
-.contact-list__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .contact-list__link {

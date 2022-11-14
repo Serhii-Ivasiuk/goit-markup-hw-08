@@ -1,5 +1,6 @@
 .nav-list {
 	display: flex;
+	gap: 50px;
 	margin-top: 0;
 	margin-bottom: 0;
 	padding-left: 0;
@@ -9,10 +10,6 @@
 
 .nav-list__item {
 	position: relative;
-}
-
-.nav-list__item:not(:last-child) {
-	margin-right: 50px;
 }
 
 .nav-list__link {
