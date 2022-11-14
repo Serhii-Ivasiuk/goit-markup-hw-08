@@ -1,11 +1,7 @@
 .feature-list {
+	@extend %listReset;
 	display: flex;
 	gap: 30px;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-
-	list-style: none;
 }
 
 .feature-list__item {

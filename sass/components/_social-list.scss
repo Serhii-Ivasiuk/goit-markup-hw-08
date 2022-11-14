@@ -1,12 +1,9 @@
 .social-list {
+	@extend %listReset;
+
 	display: flex;
 	gap: 10px;
 	justify-content: center;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-
-	list-style: none;
 }
 
 .social-list__item {

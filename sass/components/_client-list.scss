@@ -1,12 +1,9 @@
 .client-list {
+	@extend %listReset;
+
 	display: flex;
 	gap: 30px;
 	justify-content: center;
-	margin-top: 0;
-	margin-bottom: 0;
-	padding-left: 0;
-
-	list-style: none;
 }
 
 .client-list__item {
