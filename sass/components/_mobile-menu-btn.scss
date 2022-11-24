@@ -1,0 +1,28 @@
+.mobile-menu-btn {
+	@include flexCenteringXY(inline-flex);
+	padding: 0;
+
+	border: none;
+	background-color: transparent;
+
+	transition: color $transition-parameters;
+
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
+
+	&--close {
+		position: absolute;
+		top: 10px;
+		right: 15px;
+	}
+
+	@media screen and (min-width: 768px) {
+		display: none;
+	}
+}
+
+.mobile-menu-btn__icon {
+	fill: currentColor;
+}

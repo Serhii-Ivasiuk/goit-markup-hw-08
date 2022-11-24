@@ -25,10 +25,20 @@
 		<header class="header">
 			<div class="container header__container">
 				<!-- Логотип -->
-					<a class="logo header__logo" href="./index.html" lang="en">
-						Web
-						<span class="logo__part">Studio</span>
-					</a>
+				<a class="logo header__logo" href="./index.html" lang="en">
+					Web<span class="logo__part">Studio</span>
+				</a>
+				<!-- Кнопка відкриття мобільного меню -->
+				<button
+					class="mobile-menu-btn"
+					type="button"
+					aria-label="Кнопка відкриття мобільного меню"
+				>
+					<svg class="mobile-menu-btn__icon" width="40" height="40">
+						<use href="./images/icons.svg#menu-open"></use>
+					</svg>
+					<span class="visually-hidden">Меню</span>
+				</button>
 				<!-- Навігація -->
 				<nav class="main-nav">
 					<!-- Список навігації -->
@@ -716,7 +726,12 @@
 					</label>
 					<!-- Чекбокс -->
 					<label class="request-form__checkbox-field">
-						<input class="request-form__checkbox-input visually-hidden" type="checkbox" name="policy" required />
+						<input
+							class="request-form__checkbox-input visually-hidden"
+							type="checkbox"
+							name="policy"
+							required
+						/>
 						<!-- Додаємо пустий спан для створення і стилізації кастомного чекбоксу -->
 						<span class="request-form__checkbox-icon"></span>
 						<span class="request-form__checkbox-label"
