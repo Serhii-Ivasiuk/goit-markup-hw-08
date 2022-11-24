@@ -71,10 +71,17 @@ img {
   }
 }
 
-.footer__container {
-  display: flex;
-  align-items: baseline;
-  display: none;
+@media screen and (max-width: 1199px) {
+  .footer__container {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
 }
 
 .section {
@@ -493,8 +500,28 @@ img {
   background: #2f303a;
 }
 
-.social-wrap {
-  margin-right: auto;
+@media screen and (min-width: 768px) {
+  .footer-top-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-top-wrap {
+    gap: 165px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-top-wrap {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-wrap {
+    margin-right: auto;
+  }
 }
 
 .call-to-action {
@@ -505,12 +532,19 @@ img {
   color: #ffffff;
 }
 
-.address-wrap {
-  margin-right: 93px;
+@media screen and (max-width: 767px) {
+  .address-wrap {
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .address-wrap {
+    margin-right: 93px;
+  }
 }
 
 .address-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-list__link {
@@ -527,13 +561,23 @@ img {
   color: #ffffff;
 }
 
-.subscription-form {
-  display: flex;
-  gap: 12px;
+@media screen and (min-width: 768px) {
+  .subscription-form {
+    width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .subscription-form {
+    display: flex;
+    gap: 12px;
+    width: 570px;
+  }
 }
 
 .subscription-form__input {
-  width: 358px;
+  width: 100%;
   padding: 14px 16px;
   font-size: 16px;
   line-height: 1.25;
@@ -557,6 +601,11 @@ img {
 }
 .subscription-form__input::placeholder {
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 1199px) {
+  .subscription-form__input {
+    margin-bottom: 20px;
+  }
 }
 
 .backdrop {

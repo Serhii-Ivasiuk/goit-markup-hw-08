@@ -1,5 +1,11 @@
 .address-wrap {
-	margin-right: 93px;
+	@media screen and (max-width: 767px) {
+		margin-bottom: 60px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		margin-right: 93px;
+	}
 }
 
 .address-list {
@@ -7,7 +13,7 @@
 }
 
 .address-list__item:not(:last-child) {
-	margin-bottom: 9px;
+	margin-bottom: 8px;
 }
 
 .address-list__link {

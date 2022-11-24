@@ -4,8 +4,26 @@
 	background: $bg-additional-color;
 }
 
+.footer-top-wrap {
+	@media screen and (min-width: 768px) {
+		display: flex;
+		justify-content: center;
+		align-items: baseline;
+	}
+
+	@media screen and (min-width: 768px) and (max-width: 1199px) {
+		gap: 165px;
+	}
+
+	@media screen and (max-width: 1199px) {
+		margin-bottom: 60px;
+	}
+}
+
 .social-wrap {
-	margin-right: auto;
+	@media screen and (min-width: 1200px) {
+		margin-right: auto;
+	}
 }
 
 .call-to-action {
@@ -17,3 +35,4 @@
 
 	color: $text-white-color;
 }
+
