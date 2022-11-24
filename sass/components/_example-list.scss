@@ -43,7 +43,7 @@
 	padding: 63px 24px;
 
 	font-size: 18px;
-	line-height: 1.56;
+	line-height: calc(28 / 18);
 	letter-spacing: 0.03em;
 
 	color: $text-white-color;
@@ -75,7 +75,7 @@
 	margin-bottom: 4px;
 
 	font-size: 18px;
-	line-height: 2;
+	line-height: calc(36 / 18);
 	letter-spacing: 0.06em;
 
 	color: $text-secondary-color;
@@ -87,6 +87,6 @@
 
 	font-weight: 400;
 	font-size: 16px;
-	line-height: 1.88;
+	line-height: calc(30 / 16);
 	letter-spacing: 0.03em;
 }

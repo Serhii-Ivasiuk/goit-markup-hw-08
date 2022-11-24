@@ -27,7 +27,7 @@
 
 	font-weight: 500;
 	font-size: 16px;
-	line-height: 1.19;
+	line-height: calc(19 / 16);
 
 	color: $text-secondary-color;
 }
@@ -37,5 +37,5 @@
 	margin-bottom: 16px;
 
 	font-size: 16px;
-	line-height: 1.19;
+	line-height: calc(19 / 16);
 }

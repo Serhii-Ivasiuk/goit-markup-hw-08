@@ -12,7 +12,7 @@
 	display: block;
 	margin-bottom: 20px;
 
-	line-height: 1.14;
+	line-height: calc(16 / 14);
 	text-transform: uppercase;
 
 	color: $text-white-color;

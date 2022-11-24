@@ -30,7 +30,7 @@
 	margin-bottom: 50px;
 
 	font-size: 36px;
-	line-height: 1.17;
+	line-height: calc(42 / 36);
 	text-align: center;
 
 	color: $text-secondary-color;
