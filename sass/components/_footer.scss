@@ -4,6 +4,11 @@
 	background: $bg-additional-color;
 }
 
+.footer__logo {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
 .footer-top-wrap {
 	@media screen and (min-width: 768px) {
 		display: flex;
@@ -35,4 +40,3 @@
 
 	color: $text-white-color;
 }
-

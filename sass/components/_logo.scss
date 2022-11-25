@@ -14,26 +14,6 @@
 	}
 }
 
-.header__logo {
-	padding-top: 16px;
-	padding-bottom: 16px;
-
-	@media screen and (min-width: 768px) {
-		margin-right: 88px;
-		padding-top: 24px;
-		padding-bottom: 25px;
-	}
-
-	@media screen and (min-width: 1200px) {
-		margin-right: 93px;
-	}
-}
-
-.footer__logo {
-	display: inline-block;
-	margin-bottom: 20px;
-}
-
 .logo__part {
 	color: $text-additional-color;
 
