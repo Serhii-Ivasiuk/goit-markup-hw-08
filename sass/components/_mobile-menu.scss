@@ -47,7 +47,6 @@
 	font-size: 40px;
 	line-height: calc(47 / 40);
 	letter-spacing: 0.02em;
-	text-decoration: none;
 
 	color: $text-secondary-color;
 
@@ -76,7 +75,6 @@
 	font-size: 34px;
 	line-height: calc(40 / 34);
 	letter-spacing: 0.02em;
-	text-decoration: none;
 
 	color: $accent-color;
 
@@ -92,9 +90,6 @@
 	font-size: 24px;
 	line-height: calc(28 / 24);
 	letter-spacing: 0.02em;
-	text-decoration: none;
-
-	color: inherit;
 }
 
 .mobile-menu__social-list {
@@ -102,7 +97,7 @@
 	column-gap: 10px;
 	row-gap: 20px;
 	flex-wrap: wrap;
-	
+
 	@media screen and (max-width: 440px) {
 		max-width: 220px;
 	}
@@ -128,6 +123,4 @@
 	letter-spacing: 0.02em;
 
 	color: $accent-color;
-
-	text-decoration: none;
 }
