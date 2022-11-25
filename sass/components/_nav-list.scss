@@ -1,8 +1,6 @@
 .nav-list {
 	display: flex;
 	gap: 50px;
-
-	@extend %listReset;
 }
 
 .nav-list__item {

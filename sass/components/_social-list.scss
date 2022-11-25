@@ -1,8 +1,6 @@
 .social-list {
 	@include flexCenteringXY();
 	gap: 10px;
-
-	@extend %listReset;
 }
 
 .social-list__item {

@@ -1,11 +1,4 @@
 @charset "UTF-8";
-.example-list, .filter-list, .mobile-menu__social-list, .mobile-menu__nav-list, .address-list, .client-list, .social-list, .team-list, .work-list, .feature-list, .contact-list, .nav-list {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -40,6 +33,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
 }
 
 .section {
