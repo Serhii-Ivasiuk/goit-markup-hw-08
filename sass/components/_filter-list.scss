@@ -29,8 +29,7 @@
 	border-radius: 4px;
 	cursor: pointer;
 
-	transition: color $transition-parameters, background-color $transition-parameters,
-		box-shadow $transition-parameters;
+	@include transition(color, background-color, box-shadow);
 
 	&:hover,
 	&:focus {

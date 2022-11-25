@@ -31,7 +31,7 @@
 	flex-direction: column;
 	height: 100%;
 
-	transition: box-shadow $transition-parameters;
+	@include transition(box-shadow);
 
 	&:hover,
 	&:focus {
@@ -69,7 +69,7 @@
 	/* Змістив додатково на 1% оскільки при масштабуванні сторінки з'являється тонка синя смуга знизу */
 	transform: translateY(101%);
 
-	transition: transform $transition-parameters;
+	@include transition(transform);
 
 	.example-list__link:hover &,
 	.example-list__link:focus & {

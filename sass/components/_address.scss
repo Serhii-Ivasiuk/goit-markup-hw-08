@@ -18,7 +18,7 @@
 
 	color: $text-transparent-color;
 
-	transition: color $transition-parameters;
+	@include transition(color);
 
 	&:hover,
 	&:focus {

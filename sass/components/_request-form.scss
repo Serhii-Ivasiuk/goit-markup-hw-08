@@ -41,7 +41,7 @@
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 
-	transition: border-color $transition-parameters;
+	@include transition(border-color);
 
 	&:focus {
 		outline: none;
@@ -59,7 +59,7 @@
 
 	transform: translateY(-50%);
 
-	transition: fill $transition-parameters;
+	@include transition(fill);
 
 	/* Вариант БЕЗ :focus-within (залежить від послідовності елементів в розмітці, але на 100% підтримується всіма браузерами) */
 
@@ -79,7 +79,7 @@
 	border-radius: 4px;
 	resize: none;
 
-	transition: border-color $transition-parameters;
+	@include transition(border-color);
 
 	&:focus {
 		outline: none;
@@ -126,7 +126,7 @@
 	border-radius: 2px;
 	cursor: pointer;
 
-	transition: border-color $transition-parameters;
+	@include transition(border-color);
 
 	/* Для того, щоб спрацюв селектор ~ треба щоб icon-checkbox йшов в розмітці НИЖЧЕ checkbox-input (~ для будь-якого сусіда ЗНИЗУ) */
 	&:hover,

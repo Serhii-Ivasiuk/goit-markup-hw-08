@@ -24,7 +24,7 @@
 	line-height: calc(16 / 14);
 	letter-spacing: 0.02em;
 
-	transition: color $transition-parameters;
+	@include transition(color);
 
 	&:hover,
 	&:focus {

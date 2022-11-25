@@ -11,7 +11,7 @@
 }
 
 .close-btn__icon {
-	transition: fill $transition-parameters;
+	@include transition(fill);
 
 	.close-btn:hover &,
 	.close-btn:focus & {

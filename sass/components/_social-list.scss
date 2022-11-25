@@ -16,7 +16,7 @@
 	color: $icon-color;
 	border-radius: 50%;
 
-	transition: color $transition-parameters, background-color $transition-parameters;
+	@include transition(color, background-color);
 
 	&:hover,
 	&:focus {

@@ -20,6 +20,7 @@ $icon-form-color: #212121;
 
 $accent-color: #2196f3;
 
-// transitions
+// transition-parameters for @mixin transition
 
-$transition-parameters: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-time: 250ms;
+$transition-cubic: cubic-bezier(0.4, 0, 0.2, 1);

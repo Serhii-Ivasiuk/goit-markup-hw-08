@@ -17,7 +17,7 @@
 
 	color: $text-secondary-color;
 
-	transition: color $transition-parameters;
+	@include transition(color);
 
 	&:hover,
 	&:focus {

@@ -3,3 +3,9 @@
 	justify-content: center;
 	align-items: center;
 }
+
+@mixin transition($property...) {
+	transition-property: $property;
+	transition-duration: $transition-time;
+	transition-timing-function: $transition-cubic;
+}

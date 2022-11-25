@@ -6,7 +6,7 @@
 	// Вмикаємо скрол при необхідності
 	overflow-y: auto;
 
-	transition: opacity $transition-parameters, visibility $transition-parameters;
+	@include transition(opacity, visibility);
 
 	&.is-hidden {
 		visibility: hidden;
@@ -34,7 +34,7 @@
 
 	transform: scale(1);
 
-	transition: transform $transition-parameters;
+	@include transition(transform);
 
 	.is-hidden & {
 		transform: scale(0.5);
@@ -49,7 +49,7 @@
 
 		transform: translate(-50%, -50%) scale(1);
 
-		transition: transform $transition-parameters;
+		@include transition(transform);
 
 		.is-hidden & {
 			transform: translate(-50%, -50%) scale(0.5);
