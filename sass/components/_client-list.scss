@@ -1,13 +1,26 @@
 .client-list {
 	display: flex;
+	flex-wrap: wrap;
 	gap: 30px;
 
 	@extend %listReset;
 }
 
 .client-list__item {
-	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 6 - 1)) / 6 елементів в рядку */
-	flex-basis: calc((100% - 30px * (6 - 1)) / 6);
+	@media screen and (max-width: 767px) {
+		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 2 - 1)) / 2 елементів в рядку */
+		flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+	}
+
+	@media screen and (min-width: 768px) {
+		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 3 - 1)) / 3 елементів в рядку */
+		flex-basis: calc((100% - 30px * (3 - 1)) / 3);
+	}
+
+	@media screen and (min-width: 1200px) {
+		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 6 - 1)) / 6 елементів в рядку */
+		flex-basis: calc((100% - 30px * (6 - 1)) / 6);
+	}
 }
 
 .client-list__link {
