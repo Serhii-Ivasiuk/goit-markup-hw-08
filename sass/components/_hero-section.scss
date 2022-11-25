@@ -1,6 +1,7 @@
 .hero-section {
 	max-width: 480px;
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 118px 0;
 
 	text-align: center;
@@ -52,7 +53,6 @@
 }
 
 .hero-section__title {
-	margin-top: 0;
 	margin-bottom: 30px;
 
 	font-weight: 900;

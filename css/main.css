@@ -29,6 +29,17 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -68,7 +79,6 @@ ul {
 }
 
 .section__title {
-  margin-top: 0;
   margin-bottom: 30px;
   font-size: 28px;
   line-height: 1.1785714286;
@@ -125,7 +135,8 @@ ul {
 
 .container {
   min-width: 320px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0 15px;
 }
 @media screen and (max-width: 767px) {
@@ -275,7 +286,8 @@ ul {
 
 .hero-section {
   max-width: 480px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 118px 0;
   text-align: center;
   background-color: #c4c4c4;
@@ -314,7 +326,6 @@ ul {
 }
 
 .hero-section__title {
-  margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
@@ -398,7 +409,6 @@ ul {
 }
 
 .feature-list__title {
-  margin-top: 0;
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.1428571429;
@@ -412,8 +422,6 @@ ul {
 }
 
 .feature-list__description {
-  margin-bottom: 0;
-  margin-top: 0;
   line-height: 1.7142857143;
 }
 
@@ -437,7 +445,6 @@ ul {
   left: 0;
   bottom: 0;
   width: 100%;
-  margin: 0;
   padding: 27px 20px;
   font-weight: 700;
   line-height: 1.1428571429;
@@ -485,7 +492,6 @@ ul {
 }
 
 .team-list__name {
-  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -494,7 +500,6 @@ ul {
 }
 
 .team-list__position {
-  margin-top: 0;
   margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.1875;
@@ -1144,7 +1149,6 @@ ul {
   top: 0;
   left: 0;
   height: 100%;
-  margin: 0;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.5555555556;
@@ -1174,7 +1178,6 @@ ul {
 }
 
 .example-list__title {
-  margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -1183,8 +1186,6 @@ ul {
 }
 
 .example-list__text {
-  margin-top: 0;
-  margin-bottom: 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.875;

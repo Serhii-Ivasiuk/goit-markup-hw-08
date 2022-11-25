@@ -51,7 +51,6 @@
 	left: 0;
 
 	height: 100%;
-	margin: 0;
 	padding: 63px 24px;
 
 	font-size: 18px;
@@ -88,7 +87,6 @@
 }
 
 .example-list__title {
-	margin-top: 0;
 	margin-bottom: 4px;
 
 	font-size: 18px;
@@ -99,9 +97,6 @@
 }
 
 .example-list__text {
-	margin-top: 0;
-	margin-bottom: 0;
-
 	font-weight: 400;
 	font-size: 16px;
 	line-height: calc(30 / 16);
