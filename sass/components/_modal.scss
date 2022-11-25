@@ -3,21 +3,27 @@
 
 	background-color: rgba(0, 0, 0, 0.2);
 
+	// Вмикаємо скрол при необхідності
+	overflow-y: auto;
+
 	transition: opacity $transition-parameters, visibility $transition-parameters;
-}
 
-.is-hidden {
-	visibility: hidden;
-	opacity: 0;
-	pointer-events: none;
-}
+	&.is-hidden {
+		visibility: hidden;
+		opacity: 0;
+		pointer-events: none;
+	}
 
+	@media screen and (max-width: 1199px) {
+		padding: 93px 15px;
+	}
+}
 .modal {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-
-	width: 528px;
+	position: relative;
+	width: 100%;
+	max-width: 450px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 40px;
 
 	background: $bg-primary-color;
@@ -25,11 +31,30 @@
 		0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 4px;
 
-	transform: translate(-50%, -50%) scale(1);
+	transform: scale(1);
 
 	transition: transform $transition-parameters;
 
 	.is-hidden & {
-		transform: translate(-50%, -50%) scale(0.5);
+		transform: scale(0.5);
+	}
+
+	@media screen and (min-width: 1200px) {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+
+		max-width: 528px;
+
+		transform: translate(-50%, -50%) scale(1);
+
+		transition: transform $transition-parameters;
+
+		.is-hidden & {
+			transform: translate(-50%, -50%) scale(0.5);
+		}
+	}
+
+	@media screen and (min-width: 1200px) {
 	}
 }
