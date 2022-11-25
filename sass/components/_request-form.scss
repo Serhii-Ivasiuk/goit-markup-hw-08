@@ -9,7 +9,7 @@
 
 	color: $text-secondary-color;
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		line-height: calc(23 / 20);
 	}
 }
@@ -93,7 +93,7 @@
 
 		color: rgba(117, 117, 117, 0.5);
 
-		@media screen and (min-width: 1200px) {
+		@include desktop-up {
 			font-size: 12px;
 			line-height: calc(14 / 12);
 		}
@@ -150,7 +150,7 @@
 	font-size: 12px;
 	line-height: calc(14 / 12);
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		font-size: 14px;
 		line-height: calc(24 / 14);
 	}

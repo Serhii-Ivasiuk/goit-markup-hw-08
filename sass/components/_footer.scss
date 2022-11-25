@@ -5,11 +5,11 @@
 }
 
 .footer__container {
-	@media screen and (max-width: 1199px) {
+	@include mobile-and-tablet-only {
 		text-align: center;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		display: flex;
 		justify-content: space-between;
 		align-items: baseline;
@@ -22,23 +22,23 @@
 }
 
 .footer-top-wrap {
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		display: flex;
 		justify-content: center;
 		align-items: baseline;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@include tablet-only {
 		gap: 165px;
 	}
 
-	@media screen and (max-width: 1199px) {
+	@include mobile-and-tablet-only {
 		margin-bottom: 60px;
 	}
 }
 
 .social-wrap {
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		margin-right: auto;
 	}
 }

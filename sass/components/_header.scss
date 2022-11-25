@@ -5,7 +5,7 @@
 .header__container {
 	display: flex;
 
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		justify-content: space-between;
 	}
 }
@@ -14,13 +14,13 @@
 	padding-top: 16px;
 	padding-bottom: 16px;
 
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		margin-right: 88px;
 		padding-top: 24px;
 		padding-bottom: 25px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		margin-right: 93px;
 	}
 }
@@ -29,7 +29,7 @@
 	display: flex;
 	margin-right: auto;
 
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		display: none;
 	}
 }

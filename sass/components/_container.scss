@@ -4,15 +4,15 @@
 	margin-right: auto;
 	padding: 0 15px;
 
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		max-width: 480px;
 	}
 
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		width: 768px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		width: 1200px;
 	}
 }

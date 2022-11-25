@@ -1,16 +1,16 @@
 .contact-list {
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		display: none;
 	}
 
-	@media screen and (min-width: 768px) and (max-width: 1199px) {
+	@include tablet-only {
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
 		gap: 10px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		display: flex;
 		gap: 50px;
 	}
@@ -31,7 +31,7 @@
 		color: $accent-color;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		padding: 32px 0;
 	}
 }

@@ -1,9 +1,9 @@
 .address-wrap {
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		margin-bottom: 60px;
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		margin-right: 93px;
 	}
 }

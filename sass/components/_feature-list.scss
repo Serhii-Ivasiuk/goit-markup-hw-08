@@ -1,5 +1,5 @@
 .feature-list {
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
@@ -7,18 +7,18 @@
 }
 
 .feature-list__item {
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		&:not(:last-child) {
 			margin-bottom: 30px;
 		}
 	}
 
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 2 - 1)) / 2 елемента в рядку */
 		flex-basis: calc((100% - 30px * (2 - 1)) / 2);
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
 		flex-basis: calc((100% - 30px * (4 - 1)) / 4);
 	}
@@ -42,7 +42,7 @@
 
 	color: $text-secondary-color;
 
-	@media screen and (max-width: 767px) {
+	@include mobile-only {
 		&:not(:last-child) {
 			text-align: center;
 		}

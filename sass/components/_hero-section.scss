@@ -14,30 +14,28 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
-	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+	@include pixel-ratio-2x {
 		// Фонове зображення 2х для мобільних пристроїв
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/0-hero/hero-960.jpg);
 	}
 
-	@media screen and (min-width: 768px) {
+	@include tablet-up {
 		max-width: 768px;
 		// Фонове зображення 1х для планшетних пристроїв
 		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 			url(../images/0-hero/hero-768.jpg);
 	}
 
-	@media screen and (min-width: 768px) {
-		@media screen and (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
+	@include tablet-up {
+		@include pixel-ratio-2x {
 			// Фонове зображення 2х для планшетних пристроїв
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url(../images/0-hero/hero-1536.jpg);
 		}
 	}
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		max-width: 1600px;
 		padding: 200px 0;
 		// Фонове зображення 1х для десктопних пристроїв
@@ -45,10 +43,8 @@
 			url(../images/0-hero/hero-1600.jpg);
 	}
 
-	@media screen and (min-width: 1200px) {
-		@media screen and (min-device-pixel-ratio: 2),
-			(min-resolution: 192dpi),
-			(min-resolution: 2dppx) {
+	@include desktop-up {
+		@include pixel-ratio-2x {
 			// Фонове зображення 2х для десктопних пристроїв
 			background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 				url(../images/0-hero/hero-3200.jpg);
@@ -67,7 +63,7 @@
 
 	color: $text-white-color;
 
-	@media screen and (min-width: 1200px) {
+	@include desktop-up {
 		font-size: 44px;
 		line-height: calc(60 / 44);
 	}
