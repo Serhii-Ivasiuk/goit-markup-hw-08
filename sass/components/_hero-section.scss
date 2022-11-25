@@ -1,7 +1,7 @@
 .hero-section {
-	max-width: 1600px;
+	max-width: 480px;
 	margin: 0 auto;
-	padding: 200px 0;
+	padding: 118px 0;
 
 	text-align: center;
 
@@ -12,7 +12,14 @@
 	background-repeat: no-repeat;
 	background-position: center;
 
-	display: none; //temp
+	@media screen and (min-width: 768px) {
+		max-width: 768px;
+	}
+
+	@media screen and (min-width: 1200px) {
+		max-width: 1600px;
+		padding: 200px 0;
+	}
 }
 
 .hero-section__title {
@@ -20,10 +27,15 @@
 	margin-bottom: 30px;
 
 	font-weight: 900;
-	font-size: 44px;
-	line-height: calc(60 / 44);
+	font-size: 26px;
+	line-height: calc(42 / 26);
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 
 	color: $text-white-color;
+
+	@media screen and (min-width: 1200px) {
+		font-size: 44px;
+		line-height: calc(60 / 44);
+	}
 }
