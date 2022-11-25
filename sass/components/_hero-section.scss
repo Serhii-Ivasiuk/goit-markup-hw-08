@@ -6,19 +6,48 @@
 	text-align: center;
 
 	background-color: #c4c4c4;
+	// Фонове зображення 1х для мобільних пристроїв
 	background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-		url(../images/hero.jpg);
+		url(../images/0-hero/hero-480.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
 
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		// Фонове зображення 2х для мобільних пристроїв
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/0-hero/hero-960.jpg);
+	}
+
 	@media screen and (min-width: 768px) {
 		max-width: 768px;
+		// Фонове зображення 1х для планшетних пристроїв
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/0-hero/hero-768.jpg);
+	}
+
+	@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+		screen and (min-width: 768px) and (min-resolution: 192dpi),
+		screen and (min-width: 768px) and (min-resolution: 2dppx) {
+		// Фонове зображення 2х для планшетних пристроїв
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/0-hero/hero-1536.jpg);
 	}
 
 	@media screen and (min-width: 1200px) {
 		max-width: 1600px;
 		padding: 200px 0;
+		// Фонове зображення 1х для десктопних пристроїв
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/0-hero/hero-1600.jpg);
+	}
+
+	@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+		screen and (min-width: 1200px) and (min-resolution: 192dpi),
+		screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+		// Фонове зображення 2х для десктопних пристроїв
+		background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+			url(../images/0-hero/hero-3200.jpg);
 	}
 }
 
