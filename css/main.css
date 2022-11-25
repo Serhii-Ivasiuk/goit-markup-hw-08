@@ -87,19 +87,24 @@ img {
 .section {
   padding: 60px 0;
 }
-.section--no-padding-top {
-  padding-top: 0;
-}
 .section--dark-bg {
   background-color: #f5f4fa;
+}
+@media screen and (max-width: 1199px) {
+  .section--mobile-and-tablet-hidden {
+    display: none;
+  }
 }
 @media screen and (min-width: 1200px) {
   .section {
     padding: 94px 0;
   }
+  .section--no-padding-top {
+    padding-top: 0;
+  }
 }
 
-.section ~ .section {
+.section--no-padding-top ~ .section {
   display: none;
 }
 

@@ -38,20 +38,26 @@
 .section {
 	padding: 60px 0;
 
-	&--no-padding-top {
-		padding-top: 0;
-	}
-
 	&--dark-bg {
 		background-color: $bg-secondary-color;
 	}
 
+	@media screen and (max-width: 1199px) {
+		&--mobile-and-tablet-hidden {
+			display: none;
+		}
+	}
+
 	@media screen and (min-width: 1200px) {
 		padding: 94px 0;
+
+		&--no-padding-top {
+			padding-top: 0;
+		}
 	}
 }
 
-.section ~ .section {
+.section--no-padding-top ~ .section {
 	display: none;
 }
 
