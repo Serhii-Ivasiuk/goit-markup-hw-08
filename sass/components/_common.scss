@@ -17,6 +17,7 @@
 
 .header__container {
 	display: flex;
+
 	@media screen and (max-width: 767px) {
 		justify-content: space-between;
 	}
@@ -35,7 +36,7 @@
 }
 
 .section {
-	padding: 94px 0;
+	padding: 60px 0;
 
 	&--no-padding-top {
 		padding-top: 0;
@@ -45,7 +46,13 @@
 		background-color: $bg-secondary-color;
 	}
 
-	display: none; //temp
+	@media screen and (min-width: 1200px) {
+		padding: 94px 0;
+	}
+}
+
+.section ~ .section {
+	display: none;
 }
 
 .section__title {

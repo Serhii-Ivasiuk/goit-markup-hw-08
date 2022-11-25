@@ -1,13 +1,29 @@
 .feature-list {
-	display: flex;
-	gap: 30px;
-
 	@extend %listReset;
+
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 30px;
+	}
 }
 
 .feature-list__item {
-	/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
-	flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+	@media screen and (max-width: 767px) {
+		&:not(:last-child) {
+			margin-bottom: 30px;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 2 - 1)) / 2 елемента в рядку */
+		flex-basis: calc((100% - 30px * (2 - 1)) / 2);
+	}
+
+	@media screen and (min-width: 1200px) {
+		/* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
+		flex-basis: calc((100% - 30px * (4 - 1)) / 4);
+	}
 }
 
 .feature-list__icon-thumb {
@@ -28,6 +44,12 @@
 	text-transform: uppercase;
 
 	color: $text-secondary-color;
+
+	@media screen and (max-width: 767px) {
+		&:not(:last-child) {
+			text-align: center;
+		}
+	}
 }
 
 .feature-list__description {

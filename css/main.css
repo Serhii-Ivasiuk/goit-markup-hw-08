@@ -85,14 +85,22 @@ img {
 }
 
 .section {
-  padding: 94px 0;
-  display: none;
+  padding: 60px 0;
 }
 .section--no-padding-top {
   padding-top: 0;
 }
 .section--dark-bg {
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+}
+
+.section ~ .section {
+  display: none;
 }
 
 .section__title {
@@ -345,14 +353,30 @@ img {
   padding-right: 28px;
 }
 
-.feature-list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 
-.feature-list__item {
-  /* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
-  flex-basis: calc((100% - 90px) / 4);
+@media screen and (max-width: 767px) {
+  .feature-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .feature-list__item {
+    /* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 2 - 1)) / 2 елемента в рядку */
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .feature-list__item {
+    /* (100% ширини - зазор gap 30px * (к-ть зазорів між елементам 4 - 1)) / 4 елемента в рядку */
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .feature-list__icon-thumb {
@@ -372,6 +396,11 @@ img {
   line-height: 1.1428571429;
   text-transform: uppercase;
   color: #212121;
+}
+@media screen and (max-width: 767px) {
+  .feature-list__title:not(:last-child) {
+    text-align: center;
+  }
 }
 
 .feature-list__description {
