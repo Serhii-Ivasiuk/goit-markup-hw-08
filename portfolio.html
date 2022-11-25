@@ -444,5 +444,98 @@
 				</div>
 			</div>
 		</footer>
+		<!-- Мобільне меню -->
+		<div class="mobile-menu js-menu-container" id="mobile-menu">
+			<!-- Кнопка закриття мобільного меню -->
+			<button
+				class="mobile-menu-btn mobile-menu-btn--close js-close-menu"
+				type="button"
+				aria-label="Кнопка закриття мобільного меню"
+			>
+				<svg class="mobile-menu-btn__icon" width="40" height="40">
+					<use href="./images/icons.svg#menu-close"></use>
+				</svg>
+				<span class="visually-hidden">Меню</span>
+			</button>
+
+			<!-- Блок навігації мобільного меню -->
+			<ul class="mobile-menu__nav-list">
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link" href="./index.html"> Студія </a>
+				</li>
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link mobile-menu__nav-link--active" href="./portfolio.html"
+						>Портфоліо</a
+					>
+				</li>
+				<li class="mobile-menu__nav-item">
+					<a class="mobile-menu__nav-link" href="#">Контакти</a>
+				</li>
+			</ul>
+			<!-- Блок контактів мобільного меню -->
+			<div class="mobile-menu__contact-group">
+				<a class="mobile-menu__phone-link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+				<a class="mobile-menu__email-link" href="mailto:info@devstudio.com" target="_blank">
+					info@devstudio.com
+				</a>
+			</div>
+			<!-- Блок соц. мереж мобільного меню -->
+			<ul class="mobile-menu__social-list">
+				<li class="mobile-menu__social-item">
+					<a
+						class="mobile-menu__social-link"
+						href="https://www.instagram.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						aria-label="Іконка Instagram"
+					>
+						<span>Instagram</span>
+					</a>
+				</li>
+				<li class="mobile-menu__social-item">
+					<a
+						class="mobile-menu__social-link"
+						href="https://twitter.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						aria-label="Іконка Twitter"
+					>
+						<span>Twitter</span>
+					</a>
+				</li>
+				<li class="mobile-menu__social-item">
+					<a
+						class="mobile-menu__social-link"
+						href="https://www.facebook.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						aria-label="Іконка Facebook"
+					>
+						<span>Facebook</span>
+					</a>
+				</li>
+				<li class="mobile-menu__social-item">
+					<a
+						class="mobile-menu__social-link"
+						href="https://www.linkedin.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						aria-label="Іконка LinkedIn"
+					>
+						<span>LinkedIn</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Скрипти -->
+		<!-- Скрипт, що допомагає скрипту мобільного меню додавати інлайн-стиль <body style="overflow: hidden;">, котрий забороняє скрол сторінки в той час, коли відкрите мобільне меню -->
+		<script
+			defer
+			src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+			integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+			crossorigin="anonymous"
+		></script>
+		<!-- Скрипт мобільного меню -->
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
