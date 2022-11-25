@@ -2,6 +2,14 @@
 	border-bottom: 1px solid #ececec;
 }
 
+.header__container {
+	display: flex;
+
+	@media screen and (max-width: 767px) {
+		justify-content: space-between;
+	}
+}
+
 .header__logo {
 	padding-top: 16px;
 	padding-bottom: 16px;
