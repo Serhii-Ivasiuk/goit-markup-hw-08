@@ -21,14 +21,14 @@
 	&:focus {
 		background-color: #188ce8;
 	}
+
+	&--with-icon {
+		padding-left: 28px;
+		padding-right: 28px;
+	}
 }
 
 .button__icon {
 	margin-left: 10px;
 	fill: currentColor;
-}
-
-.subscription-form__button {
-	padding-left: 28px;
-	padding-right: 28px;
 }
