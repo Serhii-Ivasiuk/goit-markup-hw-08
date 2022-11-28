@@ -1233,6 +1233,10 @@ ul {
   right: 8px;
 }
 
+.page.no-scroll {
+  overflow: hidden;
+}
+
 .close-btn {
   display: -webkit-box;
   display: -ms-flexbox;
