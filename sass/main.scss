@@ -1,13 +1,22 @@
+// vendors
+
+@import "./vendors/modern-normalize";
+@import "./vendors/visually-hidden";
+
 // utils
+
 @import "./utils/variables";
 @import "./utils/placeholders";
 @import "./utils/mixins";
-@import "./utils/visually-hidden";
+
 // base
+
 @import "./base/fonts";
 @import "./base/base";
 @import "./base/reset";
+
 // components
+
 @import "./components/common";
 @import "./components/header";
 @import "./components/container";
