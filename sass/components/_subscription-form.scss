@@ -37,6 +37,13 @@
 		color: $text-transparent-color;
 	}
 
+	// Перебиває стилі автозаповнення інпуту від браузеру
+	// Закоментував бо в формі вимкено автозапвнення за доп. атрибуту autocomplete="off"
+	// &:-webkit-autofill {
+	// 	-webkit-box-shadow: inset 0 0 0 50px $bg-additional-color; // має відповідати кольору фону елемента
+	// 	-webkit-text-fill-color: $text-white-color; // має відповідати кольору фону елемента
+	// }
+
 	@include mobile-and-tablet-only {
 		margin-bottom: 20px;
 	}
