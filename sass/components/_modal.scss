@@ -66,6 +66,7 @@
 	right: 8px;
 }
 
-.page.no-scroll {
+// Вимикає скрол сторінки при відкритій моділці
+.no-scroll {
 	overflow: hidden;
 }

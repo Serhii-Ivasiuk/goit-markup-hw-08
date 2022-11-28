@@ -1233,7 +1233,7 @@ ul {
   right: 8px;
 }
 
-.page.no-scroll {
+.no-scroll {
   overflow: hidden;
 }
 
