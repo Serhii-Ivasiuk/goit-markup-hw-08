@@ -96,28 +96,38 @@
 					<!-- Список фільтрів -->
 					<ul class="filter-list">
 						<li class="filter-list__item">
-							<button class="filter-list__button" type="button">Усі</button>
+							<button
+								class="filter-list__button filter-list__button--active"
+								type="button"
+								data-type="all"
+							>
+								Усі
+							</button>
 						</li>
 
 						<li class="filter-list__item">
-							<button class="filter-list__button" type="button">Веб-сайти</button>
+							<button class="filter-list__button" type="button" data-type="web-site">
+								Веб-сайти
+							</button>
 						</li>
 
 						<li class="filter-list__item">
-							<button class="filter-list__button" type="button">Додатки</button>
+							<button class="filter-list__button" type="button" data-type="app">Додатки</button>
 						</li>
 
 						<li class="filter-list__item">
-							<button class="filter-list__button" type="button">Дизайн</button>
+							<button class="filter-list__button" type="button" data-type="design">Дизайн</button>
 						</li>
 
 						<li class="filter-list__item">
-							<button class="filter-list__button" type="button">Маркетинг</button>
+							<button class="filter-list__button" type="button" data-type="marketing">
+								Маркетинг
+							</button>
 						</li>
 					</ul>
 					<!-- Список робіт -->
 					<ul class="example-list">
-						<li class="example-list__item">
+						<li class="example-list__item web-site">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -170,7 +180,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item design">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -225,7 +235,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item app">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -278,7 +288,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item marketing">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -331,7 +341,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item app">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -384,7 +394,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item web-site">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -437,7 +447,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item design">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -492,7 +502,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item marketing">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -545,7 +555,7 @@
 							</a>
 						</li>
 
-						<li class="example-list__item">
+						<li class="example-list__item app">
 							<a class="example-list__link" href="#">
 								<div class="example-list__image-thumb">
 									<picture>
@@ -813,5 +823,7 @@
 		></script>
 		<!-- Скрипт мобільного меню -->
 		<script src="./js/mobile-menu.js"></script>
+		<!-- Скрипт фільтру карток портфоліо -->
+		<script src="./js/filter.js"></script>
 	</body>
 </html>
