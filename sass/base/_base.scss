@@ -1,8 +1,18 @@
 body {
+	// Робимо body флексом в колонку і задаємо мінімальну висоту 100vh для того, щоб притиснути футер до низу сторінки при фільтрації карток на сторінці портфоліо
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
 	font-family: $font-primary;
 	font-size: 14px;
 	letter-spacing: 0.03em;
 
 	color: $text-primary-color;
 	background-color: $bg-primary-color;
+}
+
+main {
+	// Притискаємо футер до низу сторінки при фільтрації карток на сторінці портфоліо
+	margin-bottom: auto;
 }
