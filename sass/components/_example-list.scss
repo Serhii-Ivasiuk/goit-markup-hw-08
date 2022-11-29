@@ -7,6 +7,9 @@
 }
 
 .example-list__item {
+	/* Заборонємо виділення карток портфоліо (інакше при подвійному кліку поруч з карткою над зображенням картки з'являється синій оверлей)*/
+	user-select: none;
+
 	@include mobile-only {
 		&:not(:last-child) {
 			margin-bottom: 30px;
@@ -59,9 +62,6 @@
 
 	color: $text-white-color;
 	background-color: rgba(33, 150, 243, 0.9);
-
-	/* Заборонємо виділяти текст оверлея */
-	user-select: none;
 
 	/* Вмикаємо скрол при необхідності */
 	overflow-y: auto;
