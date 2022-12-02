@@ -161,23 +161,24 @@
 								<picture>
 									<source
 										srcset="
-											./images/optimized-webp/1-works/work-1-370.webp 1x,
-											./images/optimized-webp/1-works/work-1-740.webp 2x
+											./images/optimized-webp/1-works/work-1-@1x.webp 1x,
+											./images/optimized-webp/1-works/work-1-@2x.webp 2x
 										"
 										type="image/webp"
 									/>
 									<source
 										srcset="
-											./images/optimized-jpg/1-works/work-1-370.jpg 1x,
-											./images/optimized-jpg/1-works/work-1-740.jpg 2x
+											./images/optimized-jpg/1-works/work-1-@1x.jpg 1x,
+											./images/optimized-jpg/1-works/work-1-@2x.jpg 2x
 										"
 										type="image/jpg"
 									/>
 									<img
 										class="work-list__image"
-										src="./images/optimized-jpg/1-works/work-1-370.jpg"
+										src="./images/optimized-jpg/1-works/work-1-@1x.jpg"
 										alt="Розробка десктопних додатків"
 										width="370"
+										loading="lazy"
 									/>
 								</picture>
 								<p class="work-list__label">Десктопні додатки</p>
@@ -189,23 +190,24 @@
 								<picture>
 									<source
 										srcset="
-											./images/optimized-webp/1-works/work-2-370.webp 1x,
-											./images/optimized-webp/1-works/work-2-740.webp 2x
+											./images/optimized-webp/1-works/work-2-@1x.webp 1x,
+											./images/optimized-webp/1-works/work-2-@2x.webp 2x
 										"
 										type="image/webp"
 									/>
 									<source
 										srcset="
-											./images/optimized-jpg/1-works/work-2-370.jpg 1x,
-											./images/optimized-jpg/1-works/work-2-740.jpg 2x
+											./images/optimized-jpg/1-works/work-2-@1x.jpg 1x,
+											./images/optimized-jpg/1-works/work-2-@2x.jpg 2x
 										"
 										type="image/jpg"
 									/>
 									<img
 										class="work-list__image"
-										src="./images/optimized-jpg/1-works/work-2-370.jpg"
+										src="./images/optimized-jpg/1-works/work-2-@1x.jpg"
 										alt="Розробка мобільних додатків"
 										width="370"
+										loading="lazy"
 									/>
 								</picture>
 								<p class="work-list__label">Мобільні додатки</p>
@@ -217,23 +219,24 @@
 								<picture>
 									<source
 										srcset="
-											./images/optimized-webp/1-works/work-3-370.webp 1x,
-											./images/optimized-webp/1-works/work-3-740.webp 2x
+											./images/optimized-webp/1-works/work-3-@1x.webp 1x,
+											./images/optimized-webp/1-works/work-3-@2x.webp 2x
 										"
 										type="image/webp"
 									/>
 									<source
 										srcset="
-											./images/optimized-jpg/1-works/work-3-370.jpg 1x,
-											./images/optimized-jpg/1-works/work-3-740.jpg 2x
+											./images/optimized-jpg/1-works/work-3-@1x.jpg 1x,
+											./images/optimized-jpg/1-works/work-3-@2x.jpg 2x
 										"
 										type="image/jpg"
 									/>
 									<img
 										class="work-list__image"
-										src="./images/optimized-jpg/1-works/work-3-370.jpg"
+										src="./images/optimized-jpg/1-works/work-3-@1x.jpg"
 										alt="Розробка дизайну"
 										width="370"
+										loading="lazy"
 									/>
 								</picture>
 								<p class="work-list__label">Дизайнерські рішення</p>
@@ -249,42 +252,62 @@
 					<ul class="team-list">
 						<li class="team-list__item">
 							<picture>
+								<!-- Desktop -->
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-webp/2-team/team-member-1-270.webp 270w,
-										./images/optimized-webp/2-team/team-member-1-354.webp 354w,
-										./images/optimized-webp/2-team/team-member-1-450.webp 450w,
-										./images/optimized-webp/2-team/team-member-1-540.webp 540w,
-										./images/optimized-webp/2-team/team-member-1-708.webp 708w,
-										./images/optimized-webp/2-team/team-member-1-900.webp 900w
+										./images/optimized-webp/2-team/team-member-1-desktop@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-1-desktop@2x.webp 2x
 									"
 									type="image/webp"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
 								/>
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-jpg/2-team/team-member-1-270.jpg 270w,
-										./images/optimized-jpg/2-team/team-member-1-354.jpg 354w,
-										./images/optimized-jpg/2-team/team-member-1-450.jpg 450w,
-										./images/optimized-jpg/2-team/team-member-1-540.jpg 540w,
-										./images/optimized-jpg/2-team/team-member-1-708.jpg 708w,
-										./images/optimized-jpg/2-team/team-member-1-900.jpg 900w
+										./images/optimized-jpg/2-team/team-member-1-desktop@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-1-desktop@2x.jpg 2x
 									"
 									type="image/jpg"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
+								/>
+								<!-- Tablet -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-1-tablet@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-1-tablet@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-1-tablet@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-1-tablet@2x.jpg 2x
+									"
+									type="image/jpg"
+								/>
+								<!-- Mobile -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-1-mobile@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-1-mobile@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-1-mobile@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-1-mobile@2x.jpg 2x
+									"
+									type="image/jpg"
 								/>
 								<img
-									class="team-list__photo"
-									src="./images/optimized-jpg/2-team/team-member-1-270.jpg"
+									class="example-list__image"
+									src="./images/optimized-jpg/2-team/team-member-1-mobile@1x.jpg"
 									alt="Учасник команди 1"
+									loading="lazy"
 								/>
 							</picture>
 							<div class="team-list__description">
@@ -357,43 +380,62 @@
 
 						<li class="team-list__item">
 							<picture>
+								<!-- Desktop -->
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-webp/2-team/team-member-2-270.webp 270w,
-										./images/optimized-webp/2-team/team-member-2-354.webp 354w,
-										./images/optimized-webp/2-team/team-member-2-450.webp 450w,
-										./images/optimized-webp/2-team/team-member-2-540.webp 540w,
-										./images/optimized-webp/2-team/team-member-2-708.webp 708w,
-										./images/optimized-webp/2-team/team-member-2-900.webp 900w
+										./images/optimized-webp/2-team/team-member-2-desktop@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-2-desktop@2x.webp 2x
 									"
 									type="image/webp"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
 								/>
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-jpg/2-team/team-member-2-270.jpg 270w,
-										./images/optimized-jpg/2-team/team-member-2-354.jpg 354w,
-										./images/optimized-jpg/2-team/team-member-2-450.jpg 450w,
-										./images/optimized-jpg/2-team/team-member-2-540.jpg 540w,
-										./images/optimized-jpg/2-team/team-member-2-708.jpg 708w,
-										./images/optimized-jpg/2-team/team-member-2-900.jpg 900w
+										./images/optimized-jpg/2-team/team-member-2-desktop@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-2-desktop@2x.jpg 2x
 									"
 									type="image/jpg"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
 								/>
-
+								<!-- Tablet -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-2-tablet@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-2-tablet@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-2-tablet@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-2-tablet@2x.jpg 2x
+									"
+									type="image/jpg"
+								/>
+								<!-- Mobile -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-2-mobile@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-2-mobile@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-2-mobile@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-2-mobile@2x.jpg 2x
+									"
+									type="image/jpg"
+								/>
 								<img
-									class="team-list__photo"
-									src="./images/optimized-jpg/2-team/team-member-2-270.jpg"
+									class="example-list__image"
+									src="./images/optimized-jpg/2-team/team-member-2-mobile@1x.jpg"
 									alt="Учасник команди 2"
+									loading="lazy"
 								/>
 							</picture>
 							<div class="team-list__description">
@@ -466,42 +508,62 @@
 
 						<li class="team-list__item">
 							<picture>
+								<!-- Desktop -->
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-webp/2-team/team-member-3-270.webp 270w,
-										./images/optimized-webp/2-team/team-member-3-354.webp 354w,
-										./images/optimized-webp/2-team/team-member-3-450.webp 450w,
-										./images/optimized-webp/2-team/team-member-3-540.webp 540w,
-										./images/optimized-webp/2-team/team-member-3-708.webp 708w,
-										./images/optimized-webp/2-team/team-member-3-900.webp 900w
+										./images/optimized-webp/2-team/team-member-3-desktop@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-3-desktop@2x.webp 2x
 									"
 									type="image/webp"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
 								/>
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-jpg/2-team/team-member-3-270.jpg 270w,
-										./images/optimized-jpg/2-team/team-member-3-354.jpg 354w,
-										./images/optimized-jpg/2-team/team-member-3-450.jpg 450w,
-										./images/optimized-jpg/2-team/team-member-3-540.jpg 540w,
-										./images/optimized-jpg/2-team/team-member-3-708.jpg 708w,
-										./images/optimized-jpg/2-team/team-member-3-900.jpg 900w
+										./images/optimized-jpg/2-team/team-member-3-desktop@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-3-desktop@2x.jpg 2x
 									"
 									type="image/jpg"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
+								/>
+								<!-- Tablet -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-3-tablet@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-3-tablet@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-3-tablet@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-3-tablet@2x.jpg 2x
+									"
+									type="image/jpg"
+								/>
+								<!-- Mobile -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-3-mobile@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-3-mobile@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-3-mobile@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-3-mobile@2x.jpg 2x
+									"
+									type="image/jpg"
 								/>
 								<img
-									class="team-list__photo"
-									src="./images/optimized-jpg/2-team/team-member-3-270.jpg"
+									class="example-list__image"
+									src="./images/optimized-jpg/2-team/team-member-3-mobile@1x.jpg"
 									alt="Учасник команди 3"
+									loading="lazy"
 								/>
 							</picture>
 							<div class="team-list__description">
@@ -574,42 +636,62 @@
 
 						<li class="team-list__item">
 							<picture>
+								<!-- Desktop -->
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-webp/2-team/team-member-4-270.webp 270w,
-										./images/optimized-webp/2-team/team-member-4-354.webp 354w,
-										./images/optimized-webp/2-team/team-member-4-450.webp 450w,
-										./images/optimized-webp/2-team/team-member-4-540.webp 540w,
-										./images/optimized-webp/2-team/team-member-4-708.webp 708w,
-										./images/optimized-webp/2-team/team-member-4-900.webp 900w
+										./images/optimized-webp/2-team/team-member-4-desktop@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-4-desktop@2x.webp 2x
 									"
 									type="image/webp"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
 								/>
 								<source
+									media="(min-width: 1200px)"
 									srcset="
-										./images/optimized-jpg/2-team/team-member-4-270.jpg 270w,
-										./images/optimized-jpg/2-team/team-member-4-354.jpg 354w,
-										./images/optimized-jpg/2-team/team-member-4-450.jpg 450w,
-										./images/optimized-jpg/2-team/team-member-4-540.jpg 540w,
-										./images/optimized-jpg/2-team/team-member-4-708.jpg 708w,
-										./images/optimized-jpg/2-team/team-member-4-900.jpg 900w
+										./images/optimized-jpg/2-team/team-member-4-desktop@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-4-desktop@2x.jpg 2x
 									"
 									type="image/jpg"
-									sizes="
-									(min-width: 1200px) 270px,
-									(min-width: 768px) 354px,
-									(min-width: 480px) 450px,
-									calc(100vw - 15px * 2)"
+								/>
+								<!-- Tablet -->
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-4-tablet@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-4-tablet@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(min-width: 768px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-4-tablet@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-4-tablet@2x.jpg 2x
+									"
+									type="image/jpg"
+								/>
+								<!-- Mobile -->
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-webp/2-team/team-member-4-mobile@1x.webp 1x,
+										./images/optimized-webp/2-team/team-member-4-mobile@2x.webp 2x
+									"
+									type="image/webp"
+								/>
+								<source
+									media="(max-width: 767px)"
+									srcset="
+										./images/optimized-jpg/2-team/team-member-4-mobile@1x.jpg 1x,
+										./images/optimized-jpg/2-team/team-member-4-mobile@2x.jpg 2x
+									"
+									type="image/jpg"
 								/>
 								<img
-									class="team-list__photo"
-									src="./images/optimized-jpg/2-team/team-member-4-270.jpg"
+									class="example-list__image"
+									src="./images/optimized-jpg/2-team/team-member-4-mobile@1x.jpg"
 									alt="Учасник команди 4"
+									loading="lazy"
 								/>
 							</picture>
 							<div class="team-list__description">
